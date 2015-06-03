@@ -1,0 +1,84 @@
+                
+                OSR's Windows NT On-Line Debug Monitor
+                                V5.0
+
+
+For: Windows XP and later
+Released: February 1997-2010
+Authors: OSR Staff, info@osr.com, http://www.osronline.com
+
+
+What Is It?
+------------
+Driver writers often include DbgPrint(...) statements in
+their code for debugging purposes.  Traditionally, the only
+way to view these messages was by setting up a debugger (such
+as WinDbg or Soft Ice for NT) -- This caused the messages
+written with DbgPrint(...) in the driver to appear in the
+debugger's output window.
+
+OSR's DebugMon utility will capture and display DbgPrint(...)
+messages that are written by drivers running on the
+same system as DebugMon.  Each output line is sequence
+numbered and time-stamped.  Output may optionally be written
+to a file.
+
+What is new?
+------------
+In this version of DebugMon we've added the ability to dynamically
+set the Debug filtering flags so that you turn on Debug output in
+W2K3 and later systems without having to set registry variables or
+use WinDbg commands.   Look under the Events menu item for the new
+"Set DbgPrint Flags" Dialog.   This dialog will allow you to select
+the debug flags to turn on, their level and whether to enable or 
+disable them.
+
+How Does It Work?
+------------------
+DebugMon is implemented via a small NT standard kernel mode
+driver and a user-mode GUI utility.  The kernel mode driver
+intercepts DbgPrint(...) requests before they are forwarded
+on to kernel debuggers.
+
+By default, DebugMon displays the messages it receives and
+does *not* forward them on to a kernel debugger that might
+be running.  If you want DbgPrint(...) messages to be
+displayed by DebugMon AND passed through to any debugger
+that might be running click on Events\Passthrough.
+
+
+How To Install
+--------------
+The installation procedure couldn't be simpler.  Just copy
+the images to a local (NON-network) drive on the system on
+which you wish to monitor debug output.  To display
+DbgPrint(...) messages simply execute DebugMon.exe.  The
+DbgSys.Sys driver is dynamically installed and loaded when
+you run DebugMon, and is removed when you exit from the
+DebugMon GUI application
+
+
+Rights, ABSENCE OF WARRANTIES, Etc.
+-----------------------------------
+This utility is supplied free of charge, and may be copied
+and redistributed freely for non-commercial purposes,
+PROVIDED IT REMAINS UNCHANGED AND THIS ORIGINAL FILE APPEARS
+ALONG WITH ANY DISTRIBUTION.
+
+Please contact OSR before distributing this software as or
+with a commercial product.
+
+OSR makes no warranties about this software, including the
+implied warrantee of mechantability.  OSR shall not be liable
+in any way for your use of this sofware: Use it entirely at
+your own risk.
+
+
+Who Is OSR?
+-----------
+OSR is the leader in consulting, design, and teaching classes
+related to Windows NT systems internals, file systems, and
+device drivers.  Check out our web page at www.osr.com!
+
+-end-
+

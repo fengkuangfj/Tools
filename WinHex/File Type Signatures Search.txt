@@ -1,0 +1,346 @@
+Description	Extensions	Header	Offset	Footer	Default size	Flags
+*** Pictures
+JPEG	JPG;jpeg;jpe	\xFF\xD8\xFF[\xC0\xC4\xDB\xE0-\xE3\xE8\xEB-\xEE\xFE]	0	~1		eb
+JPEG non-standard	JPG;jpeg;jpe	\xFF\xFF+\xD8\xFF[\xC4\xDB\xE0-\xE3\xE8\xEB\xED\xEE\xFE]	0	~1		eB
+Thumbcache fragment	cmmm	CMMM..\x00\x00.[^\x00]	0	~84	2097152/511705088	GUb
+PNG	png	\x89PNG\x0D\x0A\x1A\x0A	0	~6		be
+GIF	gif	GIF8[79]a	0	~3
+TIFF/NEF/CR2/DNG	tif;tiff;nef;cr2;dng;pef;nrw	(\x49\x49\x2A\x00)|(\x4D\x4D\x00\x2A)	0	~5
+MSO Document Image	mdi	EP\*\x00	0		2097152
+PaperPort scanned	MAX1;max	ViG..\x1A	0	~96
+Bitmap	bmp;dib	BM.....\x00.\x00....[\x0C\x28\x38\x40\x6C\x7C]\x00\x00\x00	0	~4
+PC Paintbrush	pcx	\x0A\x05\x01\x08	0		524288
+Paint Shop Pro	psp;PsPImage	(Paint Shop Pro Im)|(~BK\x00)	0	~103	2097152
+High Dynamic Range	hdr	\#\?RADIANCE\x0A	0		8400000
+Canon Raw	crw	HEAPCCDR	6		8200000
+Fuji Raw	raf	FUJIFILMCCD-RAW	0		9600000
+Minolta Dimage RAW image	mrw	\x00MRM	0		6900000
+Adobe Photoshop	psd	8BPS\x00\x01\x00\x00\x00\x00\x00\x00	0	~9	10485760
+Icon	ico	\x00\x00\x01\x00[\x01-\x15]\x00(\x10\x10|\x20\x20|\x30\x30|\x40\x40).\x00[\x00\x01]	0	~7	1024/1782600
+Graphics Metafile	wmf	\xD7\xCD\xC6\x9A\x00\x00	0	~40
+Windows 3 Metafile	wmf	\x01\x00\x09\x00\x00\x03	0	~40
+Enhanced Metafile	emf	 EMF\x00\x00\x01\x00	40	~18		e
+Artwork cache	itc2	\x00\x00\x01\x1Citch	0		802400
+Corel Photo-Paint	cpt	CPT[789]FILE[\x01-\x0F]\x00\x00\x00	0	~97	3145728/37748736
+Corel Draw	cdr;cdt	RIFF....CDR	0	~33
+Corel Binary Metafile	cmx	CMX1	8	~33
+Calamus Vector Graphic	cvg	CALAMUSCVG	0
+MacDraw drawing	drw	dDocD2	0
+Freehand drawing (v3)	fh3	FH31	0
+Freehand drawing	fh9;fh8;fh7;fh5;;	AGD[1-4]	0		600000
+Google SketchUp 	skp	\xFF\xFE\xFF\x0ES\x00k\x00e\x00t\x00c\x00h\x00U\x00p\x00\x20\x00M\x00o\x00d\x00e\x00l\x00\xFF\xFE\xFF.\x7B\x00[567]	0		4194304
+SketchUp (v8 up)	skp	\xFF\xFE\xFF\x0ES\x00k\x00e\x00t\x00c\x00h\x00U\x00p\x00\x20\x00M\x00o\x00d\x00e\x00l\x00\xFF\xFE\xFF.\x7B\x00[0-489]	0	\x9A\x99\x99\x99\x99\x99\xE9\x3F.{12}	4194304
+AutoCAD Drawing	dwg	AC10[01][0-5]\x00	0		5242880
+AutoCAD Drawing	dwg	AC10(18|24|27)\x00	0	~98	5242880
+Drawing Exchange Format	dxf	\x20{0,3}\x30(\x0D\x0A|\x0A|\x0D)SECTION	0	~99
+Encapsulated PostScript	eps;ai	\xC5\xD0\xD3\xC6	0	~70
+WebM Video	webm	\x1A\x45\xDF\xA3\x01\x00\x00\x00	0		33554432
+Sony RAW	arw	\x05\x00\x00\x00AW1\x2E	0		16882074
+WordPerfect graphics	WPG1;wpg	\xFFWPC...\x00\x01\x16	0		600000
+The GIMP image	xcf	gimp\x20xcf\x20(file|v001|v002|v003)	0	~95	1048576/125829120
+LuraWave JPEG-2000 bitmap	jp2	\x00\x00\x00\x0C\x6A\x50\x20\x20\x0D\x0A......ftypjp2 	0		5442880
+Xara X drawing	XARA;xar	XARA\xA3\xA3\x0D	0		1200000
+Kodak Cineon	cin	\x80\x2A\x5F\xD7\x00\x00\x08\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00\x00	0
+Digital Picture Exchange	dpx	(SDPX|XPDS)\x00...V#\x2E	0		7635174
+Micrographix Graphic	DRW1;drw	\x01\xFF\x02\x04\x03\x02	0		1200000
+Freehand (MX) Project	fh10;fh11	\x1C\x01\x00\x00\x02\x00\x04\x1C\x01\x14\x00\x02\x00\x14\x1C\x01\x16\x00\x02\x00	0		2097152
+Photoshop Large Document	psb	8BPS\x00\x02\x00\x00\x00\x00\x00\x00\x00	0		8194304
+WebP Image	webp	RIFF....WEBP	0	~33	24576/1048576
+ZbThumbnail	info	zbex\x04\x00\x00\x4C	0		1500000
+BBThumbs.dat	bbthumbs	\x24\x05\x20\x03[\x07\x08]\x01\x00	0		2097152
+Adobe Bridge Cache	bct	\x6C\x6E\x62\x74\x02\x00\x00\x00	0		10485760
+JPEG (Base64)	B64	/9j/4[\x0A\x0Da-zA-Z0-9\+/]{256}	0	~101		b
+PNG (Base64)	B64	iVBORw0[\x0A\x0Da-zA-Z0-9\+/]{256}	0	~101		b
+*** Documents
+Rich Text Format	rtf	\{\\rtf	0	~20		G
+Unicode UTF-16LE	txt	\xFF\xFE[\x09\x0A\x0D\x20-\x3B\x40-\x7E\xC0-\xDC]\x00[^\x00]\x00	0	~48		G
+Text UTF-8	txt	\xEF\xBB\xBF[\x09\x0A\x0D\x20-\x3B\x40-\x7E\xC0-\xDC]	0	~57		G
+MS Office/OLE2	ole2;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db;vsd;msg	\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1	0	~16
+MS Office 2007+	docx;xlsx;pptx	_Types\]\.xml	38	~14		g
+MS Access	mdb;mda;mde;mdt;fdb;psa	\x00\x01\x00\x00Standard Jet	0	~71
+MS Access 2007	accdb;accde	\x00\x01\x00\x00Standard ACE DB	0		8388608
+MS Money	mny	\x00\x01\x00\x00MSISAM	0		8388608
+FileMaker Pro 7	fp7	\x00\x01\x00\x00\x00\x02\x00\x01\x00\x05\x00\x02\x00\x02\xC0HBAM7	0		4194304
+FileMaker Pro database	fp5;fp3	\x00\x01\x00\x00\x00\x02\x00\x01\x00\x05\x00\x02\x00\x02\xC0	0		4194304
+KWord	kwd	KOffice application/x-kword	10	~14		g
+RagTime Document	rtd	\x43\x23\x2B\x44\xA4\x43\x4D\xA5\x48\x64\x72	0		524288
+WordPerfect document	wpd;wp;wp5;wp6;wpp	\xFFWPC...[\x00-\x02]\x01\x0A	0		300000
+MS Word 6.0	DOC2;doc	\x12\x34\x56\x78\x90\xFF	0		60000
+MS Word (MacBinary)	DOC3;doc	BNMSWD...\x00	67
+MS Write	wri	[\x31\x32]\xBE\x00\x00\x00\xAB\x00\x00\x00\x00\x00\x00	0		200000
+MS OneNote	one	\xE4\x52\x5C\x7B\x8C\xD8\xA7\x4D\xAE\xB1\x53\x78\xD0\x29\x96\xD3	0		3145728
+OpenOffice Writer	sxw;sxg	sun\.xml\.writer	54	~14		g
+OpenOffice Calc	sxc;stc	sun\.xml\.calc	54	~14		g
+OpenOffice Math	sxm	sun\.xml\.math	54	~14		g
+OpenOffice Impress	sxi	sun\.xml\.impress	54	~14		g
+OpenOffice Draw	sxd;std	sun\.xml\.draw	54	~14		g
+OpenOffice 2 Writer	ott	document\.text-templ	64	~14		g
+OpenOffice 2 Writer	odt	document\.text	64	~14		g
+OpenOffice 2 Calc	ots	document\.spreadsheet-templ	64	~14		g
+OpenOffice 2 Calc	ods	document\.spreads	64	~14		g
+OpenOffice 2 Base	odb	vnd\.sun\.xml\.base	50	~14		g
+OpenOffice 2 Draw	odg	document\.graphic	64	~14		g
+OpenOffice 2 Math	odf	document\.formula	64	~14		g
+OpenOffice 2 Impress	odp	document\.present	64	~14		g
+Quattro Pro Notebook 6.0	wb2	\x00\x00\x02\x00[\x01\x02]\x10\xC9\x00\x02\x00\x00\x06	0		2097152
+PostScript/Adobe	ps;eps;ai	%!PS-Adobe	0	~56
+Adobe Acrobat	pdf;ai	%PDF\x2D1\x2E	0	~17
+Adobe FrameMaker	FM1;fm;frm	<MakerFile\x20#	0		1048576			E
+Quicken	qdf	\xAC\x9E\xBD\x8F	0		8388608
+Quicken	qsd	QW Ver\. 	0		370000
+QuickBooks Backup	qbb	\x45\x86\x00\x00\x06\x00\x02\x00	0		8388608
+Lotus WordPro v9	lwp	WordPro[\x00\x0D]	0	\xA4\x43\x4D\xA5\x48\x64\x72\xD7\x01\x01\x01\x00\x02\x00\x00\x00.{8}	1500000/12582912
+Lotus 123 v9	123	\x00\x00\x1A\x00[\x03\x05]\x10\x04	0	\xA4\x43\x4D\xA5\x48\x64\x72\xD7\x01\x01\x01\x00\x02\x00\x00\x00.{8}	2097152/5242880
+Lotus 123 v3-5	wk3;wk4;wk5	\x00\x00\x1A\x00[\x00\x02]\x10\x04\x00	0		800000
+Lotus 123 v1	wk1	\x00\x00\x02\x00\x06\x04\x06\x00\x08\x00\x00\x00\x00\x00	0		524288
+Microsoft Project	mpx	MPX[, ]	0		262144
+Blindwrite	bwt	BLINDWRITE TOC FILE	0
+Claris Works document	cwk	[\x00\x03\x04]BOBO	3		600000
+Claris Works word processor (MacBinary)	cwk	WORDBOBO	65		1048576
+Claris Works text (MacBinary)	cwk	CWWPBOBO	65		1048576
+DJVU	djvu	AT&TFORM	0		5242880
+Pocket Word	pwi	\x7B\x5Cpwi\x15\x00\x00\x01	0		500000
+TextMaker Document	tmd;tmv	MV\x00\xFF\x0C\x00\x0E\x00	0
+MS Works	WKS1;wks	\xFF\x00\x02\x00\x04\x04\x05\x54\x02\x00..\x26\x54\x02\x00\x00\x00\x06\x00\x08	0		262144
+PDF (Base64)	B64	AJVBERi[\x0A\x0Da-zA-Z0-9\+/]{256}	0	~101		b
+OLE2 (Base64)	B64	0M8R4KGx[\x0A\x0Da-zA-Z0-9\+/]{256}	0	~101		b
+*** E-mail
+AOL PFC	pfc;org	AOLVM100	0	~22
+Mailbox	mbox;mbs	From\x20[^\x3F]	0	~43		E
+E-mail	eml	(MIME-Version: 1\.0|Return-[Pp]ath: |Received: (from|by) |Delivery-date: [FMSTW]|From: [\x22<=A-Za-z]|Date: (Mon|Tue|Wed|Thu|Fri|Sat|Sun), [01]?# |References: <|Message-(ID|Id|id): <)	0	~102		bG
+Outlook	pst;ost;fdb;pab	!BDN	0	~24
+Outlook AutoComplete	nk2	\x0D\xF0\xAD\xBA[\x0A-\x0C]\x00\x00\x00	0		2200000
+Exchange DB	edb	\xEF\xCD\xAB\x89[\x20\x23]\x06\x00\x00[\x00\x01]\x00\x00\x00	4	~54	5000000/1342177280
+Outlook Express	dbx	\xCF\xAD\x12\xFE[\x30\xC5-\xC7].{6}\x11	0	~25
+OS X Tiger E-mail	emlx	#{3,7}\x0D?\x0A(Delivered-To|Status|Return-Path|From|To|Date|Message-Id|x-store-info):	0	</plist>\x0A	524288/102760448	F
+Outlook 2011 Mac	olk14MsgSource	MSrc	0	~77
+Outlook 2011 Mac	olk14MsgAttach	Attc[\x00-\x08]	0	~77
+Outlook 2011 Mac	olk14message	MLRC\x00	0	~77
+OE addr. book	wab	\x9C\xCB\xCB\x8D\x13\x75\xD2\x11\x91\x58\x00\xC0\x4F\x79\x56\xA4	0		2097152
+OE addr. book (Win95)	wab	\x81\x32\x84\xC1\x85\x05\xD0\x11\xB2\x90\x00\xAA\x00\x3C\xF6\x76	0
+vCard	vcf	BEGIN:VCARD	0	END:VCARD\x0D\x0A[^B]	256000/35651584
+Virtual Calendar	vcs;ics	BEGIN:[vV]C[aA][lL][eE][nN][dD][aA][rR]	0	END:VCALENDAR	256000/10485760
+Eudora	mbx	From\x20\x3F\x3F\x3F\x40\x3F\x3F\x3F\x20	0		8388608
+Video E-Mail	vem	High JPEG Data in Memory	0
+Offline Address Book	oab	\x20\x00\x00\x00.{10}\x00\x00	0	~86
+Mozilla Address Book/Mozilla Mail Summary	msf;mab	// <!-- <mdb:mork:z 	0	~56	2097152
+*** Internet
+#INTERNAL1
+HTML/XML	HTML;htm;phtml;shtml;xml;xsd;msc	([\x0D\x0A\x09\x20]{0,21}((<[hH][tT][mM][lL])|(<![dD][oO][cC][tT][yY][pP])|(<!--)|(<\?xml)|(<xs:schema)))|(\xEF\xBB\xBF\x3C)|(\xFF\xFE\x3C\x00)	0	~15		GtE
+PHP	php;php3;php4	<\?php[^\x00]	0	~56
+SQLite 2.x database	SQLITE2;sqlite;;	\*\* This file contains an SQLite 2\.#	0			t
+SQLite 3.x database	SQLITEDB;sqlite;kexi;db;lrcat;exb;;	SQLite format 3\x00	0	~59		t
+Mime Html	mht;eml	MIME-Version:\x201\.0\x0D\x0A	0	\x00		fE
+Nokia text	vmg	BEGIN:VMSG	0	END:VMSG	1048576/14680064
+Nokia SMS	vmg	B\x00E\x00G\x00I\x00N\x00\x3A\x00V\x00M\x00S\x00G\x00\x0A\x00	0	E\x00N\x00D\x00\x3A\x00V\x00M\x00S\x00G\x00\x0A\x00	2048/100000
+Dialup	dun	\[Phone\]\x0D\x0A	0	~56	860/3000
+Google cookie	COOKIE;txt	(__utma|PREF)\x0A	0	\x0A\x2A\x0A\x00	1024/3600
+Chrome cache	chrome	\xC3\xCA\x04\xC1[\x00\x03]\x00[\x01\x02]\x00	0	~63
+Chrome session	snss	SNSS\x01\x00\x00\x00	0	~74
+Facebook	json	for \(;;\);\{\x22	0	~56
+Google	json	\{e:"[-_0-9a-zA-Z]{22}",	0	~56
+Opera Hotlist (v2.0) / bookmark	adr	(\xEF\xBB\xBF)?Opera Hotlist version #\.0	0		128000
+Firefox	sessionrestore	[0-9a-z@A-Z\x20-\x2F\x3A-\x3F\x5B-\x60\x7B-\x7E]{199}	0	~100	12288	G
+Flash Cookie	sol	\x00\xBF....TCSO	0	~52
+Safari Cookies	binarycookies	cook\x00	0	~68
+*** Archives
+Zip Archive	zip;jar;xps;apk;pages	PK\x03\x04|PK00|PK\x05\x06	0	~14		gE
+Jar Archive	JAR1;jar	\x5F\x27\xA8\x89	0
+RAR Archive	rar	Rar!\x1a\x07\x00	0	~29
+Tar/PAX Archive	tar;pax	ustar	257	~31		G
+KGB Archive	kgb	KGB_arch -	0
+GZip Archive	gz;tgz;emz	\x1F\x8B\x08[\x00\x02\x08\x10]....[\x00\x02\x04][\x00-\x12\xFF]	0	~32
+BZip Archive	bz2	BZ[0h]#\x31\x41\x59\x26	0
+ARJ Archive	arj	\x60\xEA......[\x00\x10\x14]\x00\x02	0
+7-Zip Archive	7z	7z\xBC\xAF\x27	0	~39
+XZ Archive	xz	\xFD7zXZ\x00\x00	0
+Stuffit SFX Archive	sea	APPLaust!	65
+Stuffit Archive	sitx	StuffIt!	0
+Stuffit v5 Archive	sit	StuffIt	0
+ACE Archive	ace	\*\*ACE\*\*	7
+BinHex 4.0	hqx	must be converted with BinHex	11
+MS Compressed	cab	MSCF\x00\x00\x00\x00	0	~82
+ALZip	alz	ALZ\x01\x0A\x00\x00\x00	0
+lzop compressed	lzop;lzo	\x89LZO\x00\x0D\x0A\x1A	0
+SQX compressed archive	sqx	R....-sqx-	2
+WinHki archive	hki	\x61\x5C\x04\x05\x14\x41\x00\x00\xFD\x00	0
+ALZip EGG compressed	egg	EGGA\x00	0
+Free Backup Fix	fbf	SymBakUp  1\.0\x0A\x1A\x01	0	FHT1.\x00{19}	2621440/104857600
+*** OS Artifacts
+Win9x Registry Hive	registry	CREG	0
+WinNT Registry Hive	REGISTRY;;	regf	0	~28		Gt
+Registry fragment	hbin	hbin\x00	0	~80		GUE
+Registry Script	rgs	HKCR\x0D\x0A\{	0	~56
+Windows Password	pwl	\xE3\x82\x85\x96	0		4096
+Windows Event Log	evt	\x30\x00\x00\x00LfLe	0	~44
+Windows Event Log	evtx	ElfFile	0	~42
+setup info	setupinfo;;	DRBKLBSM	24
+EFS Private Key file	EFS;;	\x02\x00\x00\x00\x00\x00\x00\x00[^\x00]\x00\x00\x00.\x00\x00\x00..\x00\x00..\x00\x00..\x00\x00\x14\x00	0		1000
+EFS Master Key file	EFS;;	\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00[0-9a-f]\x00[0-9a-f]\x00	0		1000
+Printer Spool 9x	shd	\x4B\x49\x00\x00..\x00\x00..\x00\x00..\x00\x00	0		1000	E
+Printer Spool NT	shd	\x66\x49\x00\x00......\x00\x00.\x00\x00\x00	0		1000	E
+Printer Spool W2K/XP	shd	\x67\x49\x00\x00.\x00\x00\x00......\x00\x00.\x00\x00\x00	0		4000	E
+Printer Spool 2003	shd	\x68\x49\x00\x00.\x00\x00\x00......\x00\x00.\x00\x00\x00	0		4000	E
+Printer Spool NT/2K/XP	spl	\x00\x00\x01\x00..\x00\x00\x10\x00\x00\x00..\x00\x00	0	~19		E
+Certificate 1	cer;cat;p7b;swz	\x30\x82..[\x06\x0A\x30]	0	~53
+Certificate 2	cat;swz	\x30\x83[^\x00]..\x06\x09	0	~53
+Certificate 3	pem;p7b	-----BEGIN\x20	0	~56	4096	b
+SSLHOSTINFO	sslinf	\x00[\x01-\x04]\x00\x00\x00...\x00\x30\x82	3		8196
+setupapi Vista	log	\[Device Install Log\]\x0D\x0A	0	~56
+setupapi XP	log	\[SetupAPI Log\]\x0D\x0A	0	~56
+Shadow copy	VSC;;	\x6B\x87\x08\x38\x76\xC1\x48\x4E\xB7\xAE\x04\x04\x6E\x6C\xC7\x52\x01\x00\x00\x00\x04	0	~46
+Windows Pagedump	dmp	PAGEDUMP	0	~51
+Windows Pagedump	dmp	PAGEDU64	0		2097152
+Heap dump file	hdmp;mdmp	MDMP\x93\xA7\xBC\x61	0		4194304
+NTFS $LogFile	$LOGFILE;;	RSTR\x1E\x00\x09\x00	0	~60	67108864
+$UsnJrnl:$J record	usnjrnl	\x00\x00\x02\x00\x00\x00.{31}\x01.{17}[\x00\x01]\x3C\x00	2	~81		GUE
+Event Trace Log	etl	\x00[\x00\x04\x0C\x10\x20\x40\x80][\x00\x01\x02]\x00\x06[\x00\x01]\x01[\x04\x05]..\x00\x00[\x01-\x04\x08]\x00\x00\x00.{7}[\x00\x01](aa|Zb)\x02\x00	104
+Snapshot Prop	SnapProp;;	\x1F\x44\xFA\xA0\x8E\xF6\xCC\x4D\x9D\x91\x2C\x2E\xBE\xC0\xBB\x63|\x8F\x11\xE1\x6A\x1A\x59\xE0\x47\xB2\xC3\x3C\xFA\x26\xEC\x2B\x80	0		32768
+Windows Prefetch	pf	[\x11\x17\x1A]\x00\x00\x00SCCA	0	~23
+Task Scheduler	job	(\x01\x05|\x00\x06|\x01\x06|\x02\x06|\x03\x06)\x01\x00.{16}\x46\x00	0		1200
+$I Recycler	recycler	\x01\x00{7}.....\x00\x00\x00.{7}\x01[C-Z]\x00:\x00	0		1024
+Windows Shortcut	lnk	\x4C\x00\x00\x00\x01\x14\x02\x00\x00\x00\x00\x00\xC0\x00\x00\x00\x00\x00\x00\x46	0	~49	3000/32768	bGe
+Internet Shortcut	url;ulk	\[InternetShortcut\]	0	\x00	6000	f
+Internet Shortcut	url;website	(\[DEFAULT\]\x0D\x0ABASEURL|\[\{000214A0-0000-0000-C000-000000000046)	0	~56
+Apple download cache	waf	\.WAF	0
+Change Log	clog;log	\x00\x00\x00\x00\x12\xEF\xCD\xAB	4		65536
+Ubuntu Trash	trashinfo	\[Trash Info\]\x0A	0	\x00	1024	f
+KDE cache	kdecache	7\x0Ahttp://	0
+PList (XML)	plist	<!DOCTYPE plist	39	</plist>\x0A
+PList (binary)	BPLIST;plist;ipmeta	bplist00	0	~58
+Finder bookmark	flnk	book..\x00\x00\x00	0	~75
+Launch Service	csstore	\xD0\xFA\xD0\xDA\x00	0	~76
+MacOS X Keychain	keychain	kych\x00\x01	0	~64
+Virtual HD	vhd	conectix	0		8388608
+VMware 4 Virtual Disk	vmdk	KDMV.\x00\x00\x00	0		8388608
+Macintosh Disk Image	dmf;dmg	\x78\x01\x73\x0D\x62\x62\x60\x60	0		2097152
+Windows Imaging	wim;swm	MSWIM\x00\x00\x00	0	~66
+iPhone backup index	mbdx	mbdx\x02\x00	0		520000
+iPhone backup db	mbdb	mbdb\x05\x00	0		2097152
+iPhone crash report	CRASH;log	Incident Identifier: [0-9A-F]{8}-	0	~56
+AppleDouble	_ad	\x00\x05\x16\x07\x00\x02\x00\x00	0		742
+Apple System Log	asl	ASL DB\x00{6}	0	~79
+IIE Log	log	\#Software: Microsoft Internet Information Services #\.#\x0D\x0A	0	~56
+Desktop Services Store	DS_STORE;;	\x00\x00\x00\x01Bud1	0	~91
+EDB log (V1)	EDBLOG;log	\x00\x00\x02\x08\x00\x00[\x01-\x28]\x00[\x00\x10\x20\x80].{4}[\x00-\x0C].[\x00\x01]\x00.{4}[\x00-\x0C].[\x00\x01]\x00\x07\x00\x00\x00	7	~94
+EDB log (V2)	EDBLOG;log	\x00\x00\x10\x01\x00[\x00\x10\x40\x80][\x00-\x08]\x00[\x00\x10\x20\x80]...[\x00-\x1F][\x00-\x0C].{6}[\x00-\x1F][\x00-\x0C]...[\x07\x08]\x00\x00\x00	7	~94
+SQL Server Trace	TRC1;trc	\xFF\xFE\x90\x02\x01\x00\x4D\x00\x69\x00\x63\x00\x72\x00\x6F\x00	0		8388608
+*** Music/Video
+Wave	wav	RIFF....WAVE(fmt |JUNK|LIST|bext|fact)	0	~33
+MP3 ID3 v2/3/4	mp3	ID3[\x02-\x04]\x00[\x00\x40\x80]\x00	0		6000000	E
+MP3 general	mp3	\xFF[\xE2\xE3\xF2\xF3\xFA\xFB][\x10-\x1B\x20-\x2B\x30-\x3B\x40-\x4B\x50-\x5B\x60-\x6B\x70-\x7B\x80-\x8B\x90-\x9B\xA0-\xAB\xB0-\xBB\xC0-\xCB\xD0-\xDB\xE0-\xEB]	0	~21		cCGE
+OGG Vorbis	ogg;ogv;ogm;oga;ogx	OggS\x00	0	~45	8388608/335544320	G
+Audacity	au	dns\.	0		2097152
+AVI	avi	AVI LIST	8	~33	10000000/1610612736
+4X Movie	4xm	4XMVLIST	8
+Windows Media	asf;wmv;wma;dvr-ms	\x30\x26\xB2\x75\x8E\x66\xCF\x11\xA6\xD9\x00\xAA\x00\x62\xCE\x6C	0	~26	10000000/1073741824
+Windows Television	wtv	\xB7\xD8\x00\x20\x37\x49\xDA\x11\xA6\x4E\x00\x07\xE9\x5E\xAD\x8D	0		10485760
+MediaPlayer Playlist	wpl	<\?wpl version=	0	</smil>\x0D\x0A	100000/1048576
+M3U playlist	m3u	\#EXTM3U	0	~56
+Real Media	rm;rmvb;rv;ra	\.RMF	0		100000000
+MPEG	mpg;mpe;mpeg	\x00\x00\x01\xBA	0	~41	8388608/1342177280	GE
+QuickTime Movie	mov	(moov|pnot|wide|mdat)	4	~27	10000000/943718400	E
+QuickTime MOV	mov	ftypqt  	4	~27	10000000/943718400	E
+QuickTime 3GP	3gp	ftypisom	4	~27	10000000/314572800
+QuickTime 3GP	3gp;3ga	ftyp3gp	4	~27	10000000/314572800
+QuickTime 3GP	3gp	ftypmmp4	4	~27	10000000/314572800
+QuickTime 3G2	3g2	ftyp3g2a	4	~27	10000000/314572800
+QuickTime M4A	m4a;m4p	ftypM4A\x20	4	~27	10000000/104857600
+QuickTime M4V	m4v	ftypM4V[P\x20]	4	~27	10000000/471859200
+QuickTime MP4	mp4	ftyp(mp41|avc1|MSNV|FACE|mobi)	4	~27	10000000/2147483648
+QuickTime MP4	mp4;m4b	ftypmp42	4	~27	10000000/2147483648
+QuickTime MP4	mp4;m4b	ftypdash	4	~27	10000000/2147483648
+Matroska	mkv;mka	(matroska|\x01\x42\xF7\x81\x01\x42\xF2\x81)	8		10485760
+Flash Video	flv	FLV\x01[\x01\x04\x05\x0D]	0	~36	10000000/104857600
+Flash MP4 video	f4v	ftyp(f4v|F4V)\x20	4	~27	10000000/104857600
+Director - Shockwave movie	dcr	XFIR...\x00MDGF	0		3670016
+MIDI	mid;kar	MThd	0		300000
+Compact Disc Digital Audio (CD-DA) file	cda	RIFF....CDDAfmt	0	~33
+AMR-WB Audio	awb	\x23!AMR-WB\x0A	0
+Adaptive Multi Rate audio	amr	\x23!AMR\x0A	0	~90
+Audacity Block	auf	AudacityBlockFile	0		16000
+Sony Compressed Voice	dvf;msv	MS_VOICE.{8}SONY CORPORATION	0		12582912
+AU Format Sound	snd	\x53\x54\x45\x56\x45\x02\x48\x80	0
+NeXT_Sun uLaw-AUdio-format	ulaw;au	\.snd\x00\x00[\x00\x01]	0
+*** Programs
+Compiled HTML	chm;chw;chi	ITSF\x03\x00\x00\x00	0	~47
+Windows Help	hlp;gid	(\x3F\x5F\x03\x00)|(\x4C\x4E\x02\x00)	0		2097152
+MS Help 2.0	its;lit	ITOLITLS	0
+Windows exec.	exe;dll;drv;vxd;sys;ocx;vbx;com;fon	MZ.[\x00-\x02].[\x00-\x02]	0	~30
+ELF Object	o;ko	\x7FELF[\x01\x02]\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01	0
+ELF exec.	elf	\x7FELF\x01\x01\x01\x00.......\x00\x02	0	~73
+ELF 64-bit exec.	elf64	\x7FELF\x02\x01\x01\x00.......\x00\x02	0	~73
+ELF shared object	so	\x7FELF[\x01\x02]\x01\x01.\x00\x00\x00\x00\x00\x00\x00\x00\x03	0	~73
+MacOS exec.	macho	\xCA\xFE\xBA\xBE\x00\x00\x00[\x01\x02\x03]	0	~67
+MacOS 64-bit exec.	macho64	\xCF\xFA\xED\xFE	0
+*** Application Data
+Acronis True Image file	tib	\xB4\x6E\x68\x44	0		20971520
+Nero CD Compilation	nri;nrb	\x0E\x4E\x65\x72\x6F\x49\x53\x4F\x30	0	\x00LFDU[^\x00]*	800000/5452596
+Alcohol 120% CD Image	mdf	\x00\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\x00\x02\x00\x01	0		20971520
+Ghost Image	gho;ghs	\xFE\xEF\x01[\x00-\x03]....[\x00\x01][\x00\x01]	0		20971520
+eMule Collection	emulecollection	ed2k://\|file\|	0
+PGP pubring	pkr;gpg	\x99\x01[\x0D\xA2]\x04	0		11264
+PGP secring	skr	\x95(\x01\xCF|\x03\xC6)\x04	0		7000
+AxCrypt Encrypted	axx	\xC0\xB9\x07\x2E\x4F\x93\xF1\x46\xA0\x15\x79\x2C\xA1\xD9\xE8\x21\x15\x00\x00\x00\x02	0
+Steganos Safe	sle	ACL[2-5]\x00	0
+PGP Safe	pgd	PGPdMAIN\x60\x01\x00	0
+Skype chat	CHATSYNC;dat	sCdB	0	~78
+Skype localization data	mls	MLSW...skypePM \x00	0		40000
+Skype user data	dbb	l33l......\x00\x00	0	~50		G
+iChat	ichat	AIM IM with 	0	~56		G
+MS/MSN MARC archive	mar	MARC\x03	0		8388608
+Auto completion	jsonp	window\.google\.ac\.h\(\[	0	\]\]\)	1024
+Auto completion (2)	jsonp	window\.google\.td&&	0	\}\);	1024
+MapSource GPS Waypoint Database	gdb	MsRcf	0		3145728
+SeeYou Waypoint	ndb	! ILEC 	0
+Flash	swf;swc	[CF]WS[\x02-\x15]	0	~37
+Open Financial Connectivity	ofc	<OFC>[\x09\x0D\x0A\x20\x3C]	0	~56
+Open financial exchange	ofx;qfx;qbo	\x0A{0,12}OFXHEADER:\x20?100	0	</OFX>	500000
+Point of Interest	gpi	GRMREC0[01]	8
+BlackBerry Backup	ipd	Inter@ctive Pager Backup/Restore File[\x0A\x20]	0		20971520
+AVCHD Clip Information	cpi	HDMV0100	0		20000
+Nokia backup	nbu	\xCC\x52\x33\xFC\xE9\x2C\x18\x48\xAF\xE3\x36\x30\x1A\x39\x40\x06	0		41943040
+Adobe InDesign	indd;indb;indl;indt	\x06\x06\xED\xF5\xD8\x1D\x46\xE5\xBD\x31\xEF\xE7\xFE\x74\xB7\x1D	0	~87
+AVCHD Playlist	mpl	MPLS0[12]00\x00	0		100000
+Rhino 3D	3dm	3D Geometry File Format\x20\x20\x20\x20	0		4194304
+Business Card Designer	bcf	Business\x0A\x00\x04\x00Card	0
+Mobile Phone vNote	vnt	BEGIN:VNOTE	0	END:VNOTE	6000
+MS Money	mny	pfmf\#1\x00	0
+QuickBooks	QBW;adr	[\x00\x03]\x00\x00\x00\x5E\xBA\x7A\xDA	16	~93
+Quickbooks (alt)	qbw	MAUI.\x00\x00\x00	96	~93
+Inspiration Flowchart	isf	application/x-inspiration 	0		524288
+Microsoft Money Backup	mbf	\x20\x00\x6D\x62\x66	58		20971520
+Zune playlist	zpl	<\?zpl version=	0	~56
+Cisco VPN	pcf	\[main\]\x0D\x0ADescription=	0	~56
+Palm Datebook	dba	\xBE\xBA\xFE\xCA\x0FPalmSG Database......BD	0		1468006
+Palm address book	aba	\xBE\xBA\xFE\xCA\x0FPalmSG Database......BA	0		500000
+Palm To-Do	tda	\xBE\xBA\xFE\xCA\x0FPalmSG Database......DT	0		20000
+Palm Memo	mpa	\xBE\xBA\xFE\xCA\x0FPalmSG Database......PM	0		24000
+TomTom POI	tlv	\x80\x01\x01\x01\x81\x01\x31http://	3		1500
+Pcap-NG Packet Capture	pcapng	\x4D\x3C\x2B\x1A\x01\x00\x00\x00	8		4194304
+Adobe Bridge Cache	bc	hcac[\x11-\x15]\x00\x00\x00	0	~88
+Picasa3 Index	thumbindex	ffF@...\x00	0	~89
+Intuit Interchange Format	iif	!(HDR\x09PROD|TIMERHDR\x09VER)\x09VER\x09REL\x09	0	~56
+Tax Exchange Format	txf	V0##\x0D\x0AA	0	~56
+*** Special Interest
+URL with ei timestamp	eiurl	https?://	0	~92	750	Gb
+Zip record	zip	PK\x03\x04[\x0A\x14]	0	~62		bU
+Firefox cache	firefox	\x00\x01\x00[\x08-\x13].\x00..\x00\x00\x00.[\x49-\x56]	0	~55		gU
+Information Summary	summary	\xFE\xFF\x00\x00.{21}\x00\x00\x00\xE0\x85\x9F\xF2\xF9\x4F	0		1024	U
+TCP Packet	tcp	\x08\x00\x45\x00.....\x00[\x01-\x80]\x06	12	~61	1500/1500	b
+UDP Packet	udp	\x08\x00\x45\x00[\x00-\x05].....[\x01-\x80]\x11	12	~61	1500/1500	b
+VISA/Mastercard	ccn	[^0-9\-A-Za-z_\.][45]###[- ]####[- ]####[- ]####[^0-9\-A-Za-z_\[&]	0	~65	25/25	b
+Gigatribe 2.x state file	state	\x40\x02\x00\x00\x5C\x5C[a-zA-Z]	0		1000
+Gigatribe 3.x state file	state	\x00\x00\x00\x01\x00\x00[\x00\x01].\x00[\\a-zA-Z]\x00[\\:a-zA-Z]\x00	0	\x12\x34\x56\x78	1024/1048510
+Gigatribe 2.x chat	GIGA;bin	\x30\x41\x48\x43...\x00	0
+Gigatribe 3.x chat	GIGA;dat	\x63\x68\x00\x00\x00\x0A	0
+Unix kern.log	log	[ADFJNOS][a-z][a-z] [ #]# [ 012]#:##:## [a-zA-Z]	0	~56		G
+misc log files	log	20[01]#-##-##[ T]##:##:##[ \.\,]	0	~56		G
+Gatherer fragm	gthr2	\x4D\x44\x4D\x44....\x00\x00\x00\x00	0	~85		GUb
+CD Volume Descriptor	vdscr	\x01CD001\x01\x00	0		4096	c
+Gateway php	PHP1;php	\x00\x00\x00\x01\x00\x12AppendToGatewayUrl	0		378880
+PRC1	PRC1	ovly(DTGR|WP2P)	60
+Photoshop thmb	lnbt	lnbt\x01\x00\x00\x00	0	\x08gS\x09
+Spotify Playlist	BNK1;bnk	SPCO.\x00\x00\x00	0		800000
+SQL	sql	-- (Generate|MySQL|phpMyAdmin|Copyright)	0	~56
+XML fragment	xml	<\?xml version=[\x22\x27]1\.0	0	~15	8196/32000	b
