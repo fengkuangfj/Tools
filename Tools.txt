@@ -2,4 +2,4 @@ http://www.zezula.net/en/fstools/main.html
 http://www.x-ways.net/
 http://msdn.itellyou.cn/
 http://www.osronline.com/section.cfm?section=27
-https://technet.microsoft.com/en-us/sysinternals/bb545046
+https://technet.microsoft.com/en-us/sysinternals/bb842062
