@@ -1,0 +1,2 @@
+http://www.codeproject.com/Articles/132313/How-to-Debug-the-Windows-OS-using-USB
+ms-help://MS.WDK.v10.7600.091201/DevTest_g/hh/DevTest_g/BootIni_7a4cbe01-a9e7-4b00-9c85-7bac20c73286.xml.htm
