@@ -1,0 +1,195 @@
+<!-- v 1.3.0.30 -->
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+	<command:details>
+		<command:name>
+                   Disable-AppxDebug
+		</command:name>
+		<maml:description>
+			<maml:para></maml:para>
+		</maml:description>
+		<maml:copyright>
+			<maml:para></maml:para>
+		</maml:copyright>
+		<command:verb>Disable</command:verb>
+		<command:noun>AppxDebug</command:noun>
+		<dev:version></dev:version>
+	</command:details>
+	<maml:description>
+		<maml:para></maml:para>
+	</maml:description>
+	<!-- Cmdlet syntax section-->
+	<command:syntax>
+		<command:syntaxItem>
+			<maml:name>Disable-AppxDebug</maml:name>
+			<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named">
+				<maml:name>PackageFullName</maml:name>
+				<maml:description>
+					<maml:para>Appx 程序包全名</maml:para>
+				</maml:description>
+				<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>提示您进行确认，然后再执行命令。</maml:para>
+    			</maml:description>
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>描述执行此命令的结果，而不实际执行此命令。</maml:para>
+    			</maml:description>
+			</command:parameter>
+		</command:syntaxItem>
+	</command:syntax>
+	<!-- Cmdlet parameter section  -->
+	<command:parameters>
+		<command:parameter required="true" variableLength="false" globbing="false" pipelineInput="true (ByPropertyName)" position="named">
+			<maml:name>PackageFullName</maml:name>
+			<maml:description>
+				<maml:para>Appx 程序包全名</maml:para>
+								
+			</maml:description>
+			<command:parameterValue required="true" variableLength="false">string</command:parameterValue>
+			<dev:type>
+				<maml:name>string</maml:name>
+				<maml:uri/>
+			</dev:type>
+			<dev:defaultValue></dev:defaultValue>
+		</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>Confirm</maml:name>
+    			<maml:description>
+				<maml:para>提示您进行确认，然后再执行命令。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+			<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="false" position="named">
+   			 <maml:name>WhatIf</maml:name>
+    			<maml:description>
+				<maml:para>描述执行此命令的结果，而不实际执行此命令。</maml:para>
+    			</maml:description>
+    			<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>	
+				<dev:type>
+  				<maml:name>SwitchParameter</maml:name> 
+					<maml:uri/> 
+					</dev:type>
+ 			<dev:defaultValue/> 
+			</command:parameter>
+	</command:parameters>
+	<!-- Input - Output section-->
+	<command:inputTypes>
+		<command:inputType>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description>
+		</command:inputType>
+	</command:inputTypes>
+	<command:returnValues>
+		<command:returnValue>
+			<dev:type>
+				<maml:name></maml:name>
+				<maml:uri/>
+				<maml:description/>
+			</dev:type>   
+			<maml:description>
+				<maml:para>
+					<!-- description  -->
+					
+				</maml:para>
+			</maml:description> 
+		</command:returnValue>
+	</command:returnValues>
+	<!-- Error section-->
+	<command:terminatingErrors/>
+	<command:nonTerminatingErrors/>
+		<!-- Notes section  -->
+	<maml:alertSet>
+		<maml:title></maml:title>
+		<maml:alert>
+			<maml:para>
+                          
+                        </maml:para>
+		</maml:alert>
+		<maml:alert>
+			<maml:para></maml:para>
+		</maml:alert>
+	</maml:alertSet>
+	<!-- Example section  --> 
+	<command:examples>
+
+		<command:example>
+			<maml:title>
+				-------------------------- 示例 1 --------------------------
+			</maml:title> 
+			<maml:introduction>
+				<maml:para>C:\PS&gt;</maml:para>
+			</maml:introduction> 
+  			<dev:code>
+Disable-AppxDebug sampleimmersiveapp1_1.0.0.0_neutral_NorthAmerica_8sfeho38hf
+
+已禁用对 sampleimmersiveapp1_1.0.0.0_neutral_NorthAmerica_8sfeho38hf 的调试。                        </dev:code>
+       			<dev:remarks>
+                                <maml:para>说明</maml:para>
+                                <maml:para>-----------</maml:para>
+  			        <maml:para>Disables debugging for sampleimmersiveapp1_1.0.0.0_neutral_NorthAmerica_8sfeho38hf.</maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+  			</dev:remarks>
+			<command:commandLines>
+				<command:commandLine>
+					<command:commandText></command:commandText>
+				</command:commandLine>
+			</command:commandLines>
+		</command:example>
+
+		<command:example>
+			<maml:title>
+				-------------------------- 示例 2 --------------------------
+			</maml:title> 
+			<maml:introduction>
+				<maml:para>C:\PS&gt;</maml:para>
+			</maml:introduction> 
+  			<dev:code>
+Disable-AppxDebug *
+
+已禁用对所有 Appx 包的调试。                        </dev:code>
+       			<dev:remarks>
+                                <maml:para>说明</maml:para>
+                                <maml:para>-----------</maml:para>
+  			        <maml:para>对启用了调试功能的所有 Appx Packages 禁用调试。</maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+	                        <maml:para></maml:para>
+  			</dev:remarks>
+			<command:commandLines>
+				<command:commandLine>
+					<command:commandText></command:commandText>
+				</command:commandLine>
+			</command:commandLines>
+		</command:example>
+	</command:examples>
+	<!-- Link section  -->
+	<maml:relatedLinks>
+		<maml:navigationLink>
+			<maml:linkText></maml:linkText>
+			<maml:uri/>
+		</maml:navigationLink>
+	</maml:relatedLinks>
+</command:command>
