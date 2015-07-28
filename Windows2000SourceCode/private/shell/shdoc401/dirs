@@ -1,4 +1,0 @@
-DIRS    = srcw unicpp dll resdll
-
-OPTIONAL_DIRS = 
-

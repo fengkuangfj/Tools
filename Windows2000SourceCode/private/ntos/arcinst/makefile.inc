@@ -1,1 +1,0 @@
-!INCLUDE $(TARGET_DIRECTORY)\mk.inc

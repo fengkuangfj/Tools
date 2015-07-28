@@ -1,9 +1,0 @@
-LIBRARY         msident
-; DESCRIPTION is obsolete and gives the IA64 linker the heebie-jeebies
-;DESCRIPTION     'MS Light-weight identities'
-
-EXPORTS
-    DllCanUnloadNow         PRIVATE
-    DllGetClassObject       PRIVATE
-    DllRegisterServer       PRIVATE
-    DllUnregisterServer     PRIVATE

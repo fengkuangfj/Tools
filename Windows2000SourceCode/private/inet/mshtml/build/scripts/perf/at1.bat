@@ -1,1 +1,0 @@
-at 12:00 /every:mtwtf /interactive cmd.exe /k c:\build\perfbuild.bat

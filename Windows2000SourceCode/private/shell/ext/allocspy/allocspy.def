@@ -1,6 +1,0 @@
-LIBRARY         allocspy
-DESCRIPTION     'IMallocSpy leak detection DLL'
-
-EXPORTS
-LibMain
-GetShellMallocSpy

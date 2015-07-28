@@ -1,5 +1,0 @@
-DIRS = euc_db    \
-       iscii     \
-       iso_2022  \
-       sna_db    \
-       nls

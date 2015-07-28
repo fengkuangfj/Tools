@@ -1,4 +1,0 @@
-PPC_SOURCES=..\ppc\debugstb.s \
-            ..\ppc\largeint.s \
-            ..\ppc\lzntppc.s  \
-            ..\ppc\movemem.s

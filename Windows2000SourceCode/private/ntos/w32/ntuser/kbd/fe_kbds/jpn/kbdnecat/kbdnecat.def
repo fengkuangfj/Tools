@@ -1,5 +1,0 @@
-LIBRARY KBDNECAT
-
-EXPORTS
-    KbdLayerDescriptor @1
-    KbdNlsLayerDescriptor @2

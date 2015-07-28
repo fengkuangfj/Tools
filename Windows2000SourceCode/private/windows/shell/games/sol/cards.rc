@@ -1,5 +1,0 @@
-#include "windows.h"
-#include "cdt.h"
-
-#define DLL
-rcinclude cards.rch

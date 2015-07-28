@@ -1,9 +1,0 @@
-LIBRARY         MSAFD
-
-EXPORTS
-
-        WSPStartup
-        WSPSetSockOpt
-        WSPGetSockOpt
-        StartWsdpService
-        StopWsdpService 

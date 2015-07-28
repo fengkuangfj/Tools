@@ -1,5 +1,0 @@
-DIRS =  Mag_Hook \
-        Magnify
-
-OPTIONAL_DIRS = 
-

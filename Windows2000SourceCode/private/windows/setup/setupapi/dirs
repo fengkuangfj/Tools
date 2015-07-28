@@ -1,5 +1,0 @@
-DIRS=\
-    ansi{x86} \
-    unicode \
-    internal{x86} \
-    tools

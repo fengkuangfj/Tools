@@ -1,8 +1,0 @@
-#ifndef _NVT_H_INCLUDED_
-#define _NVT_H_INCLUDED_
-
-#define NVT_IAC_STRING "\377"
-#define NVT_INTERRUPT_PROCESS_STRING "\377\364"
-#define NVT_DATA_MARK_STRING "\377\362"
-
-#endif // _NVT_H_INCLUDED_

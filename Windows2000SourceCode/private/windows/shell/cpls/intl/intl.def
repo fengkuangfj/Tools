@@ -1,5 +1,0 @@
-LIBRARY INTL
-
-EXPORTS
-    CPlApplet
-    LocaleDlgProc    @100    NONAME

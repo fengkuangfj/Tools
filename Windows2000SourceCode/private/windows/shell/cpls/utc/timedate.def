@@ -1,4 +1,0 @@
-LIBRARY TIMEDATE
-
-EXPORTS
-    CPlApplet

@@ -1,6 +1,0 @@
-
-DIRS=	expand \
-        compress 
-OPTIONAL_DIRS=
-              
-

@@ -1,3 +1,0 @@
-world all clean install depend:
-	(cd include; ${MAKE} ${MFLAGS} $@)
-	(cd daytona; ${MAKE} ${MFLAGS} $@)

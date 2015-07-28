@@ -1,4 +1,0 @@
-LIBRARY         PowerCfg
-EXPORTS
-    CPlApplet
-    DllInitialize

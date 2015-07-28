@@ -1,6 +1,0 @@
-DIRS = 			\
-    types 		\
-    src   		\
-    imgfilt 	\
-    iextag      \
-    tried

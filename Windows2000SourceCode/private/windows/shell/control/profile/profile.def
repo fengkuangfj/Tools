@@ -1,7 +1,0 @@
-LIBRARY     Profile
-
-EXPORTS
-            CPlApplet
-            DllInitialize
-            ProfileDlgProc
-            NamesDlgProc

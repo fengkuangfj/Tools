@@ -1,9 +1,0 @@
-#include <windows.h>
-#include <shellapi.h>
-#include "syncapp.h"
-
-IDI_DEFAULT ICON leather.ico
-
-#include "syncapp.rcv"
-
-

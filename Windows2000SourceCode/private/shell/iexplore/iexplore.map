@@ -1,8 +1,0 @@
-// This file contains directives for how to order the functions.
-#include "iexplore.fmap"
-
-iexplorer
-{
-    global:
-        *;
-};

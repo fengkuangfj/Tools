@@ -1,6 +1,0 @@
-LIBRARY PerfDisk
-
-EXPORTS
-    OpenDiskObject
-    CollectDiskObjectData
-    CloseDiskObject

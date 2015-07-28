@@ -1,4 +1,0 @@
-NAME eventlog.dll
-
-EXPORTS
-    SvcEntry_Eventlog

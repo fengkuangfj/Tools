@@ -1,5 +1,0 @@
-LIBRARY Access
-
-EXPORTS
-    CPlApplet
-    DebugMain

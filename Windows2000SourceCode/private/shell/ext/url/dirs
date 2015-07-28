@@ -1,4 +1,0 @@
-DIRS=   \
-        srcc dll resdll
-
-OPTIONAL_DIRS=

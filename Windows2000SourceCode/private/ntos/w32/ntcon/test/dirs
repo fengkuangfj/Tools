@@ -1,5 +1,0 @@
-DIRS=tdisp \
-     writescy \
-     proc_out
-
-OPTIONAL_DIRS=

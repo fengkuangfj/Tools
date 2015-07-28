@@ -1,3 +1,0 @@
-AXP64_SOURCES=..\alpha\context.c  \
-              ..\alpha\critsect.s \
-              ..\alpha\thunk.s

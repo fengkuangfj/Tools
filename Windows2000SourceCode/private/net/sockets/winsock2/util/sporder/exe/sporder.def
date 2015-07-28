@@ -1,6 +1,0 @@
-LIBRARY   SPORDER
-
-EXPORTS
-  WSCWriteProviderOrder
-;  WSCWriteNameSpaceOrder
-;  WSCEnumNameSpaceProviders

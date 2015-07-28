@@ -1,7 +1,0 @@
-# f3
-DIRS = \
-    crt \
-    rsrc \
-    dll \
-    htmlpad \
-    tlb

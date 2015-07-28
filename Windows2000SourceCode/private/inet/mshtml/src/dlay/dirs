@@ -1,8 +1,0 @@
-# dlay
-DIRS = \
-    include \
-    std \
-    dl \
-    nile2std \
-    misc
-

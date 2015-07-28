@@ -1,4 +1,0 @@
-dirs=   lnkdump     \
-        fixlinks    \
-        pifdump     \
-        clipdump

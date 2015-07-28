@@ -1,1 +1,0 @@
-..\pngfilt.rc : ..\selfreg.inf

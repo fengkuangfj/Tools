@@ -1,8 +1,0 @@
-LIBRARY	     TWEAKUI
-
-DESCRIPTION  'User interface customization toy'
-
-EXPORTS
-           CPlApplet
-           TweakMeUp
-           TweakLogon

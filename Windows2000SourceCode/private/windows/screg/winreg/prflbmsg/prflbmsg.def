@@ -1,4 +1,0 @@
-LIBRARY prflbmsg
-
-EXPORTS
-    DummyEntryPoint

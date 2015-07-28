@@ -1,1 +1,0 @@
-notepad.exe,Microsoft Notepad,http://www.microsoft.com/,low

@@ -1,6 +1,0 @@
-LIBRARY     hostmib
-
-EXPORTS
-  SnmpExtensionInit
-  SnmpExtensionTrap
-  SnmpExtensionQuery

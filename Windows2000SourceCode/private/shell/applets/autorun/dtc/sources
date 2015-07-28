@@ -1,4 +1,0 @@
-ALT_PROJECT_TARGET=dtcinf
-SERVER=3
-!include ..\sources.inc
-

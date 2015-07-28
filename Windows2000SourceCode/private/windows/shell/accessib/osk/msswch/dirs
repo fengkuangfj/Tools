@@ -1,6 +1,0 @@
-
-DIRS = msswch  \
-       msswchx
-
-OPTIONAL_DIRS = 
-

@@ -1,4 +1,0 @@
-PPC_SOURCES=..\ppc\psctxppc.c \
-            ..\ppc\psldt.c    \
-            ..\ppc\psvdm.c    \
-            ..\ppc\psapcppc.s

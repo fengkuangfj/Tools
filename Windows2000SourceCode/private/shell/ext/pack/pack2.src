@@ -1,9 +1,0 @@
-LIBRARY         PACK2
-DESCRIPTION     'Object Packager'
-
-EXPORTS
-    DllCanUnloadNow     PRIVATE
-    DllGetClassObject   PRIVATE
-
-
-

@@ -1,2 +1,0 @@
-GPSIZE=32
-AXP64_SOURCES=..\alpha\lpcmove.s

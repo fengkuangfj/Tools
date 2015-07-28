@@ -1,3 +1,0 @@
-DIRS    = win95{x86} nt
-
-OPTIONAL_DIRS=

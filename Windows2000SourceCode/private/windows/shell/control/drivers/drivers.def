@@ -1,6 +1,0 @@
-LIBRARY Drivers
-
-EXPORTS
-    CPlApplet
-    DllInitialize
-

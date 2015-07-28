@@ -1,7 +1,0 @@
-LIBRARY     pstoreex
-
-DESCRIPTION "Protected Storage Explorer"
-
-EXPORTS
-   DllCanUnloadNow      PRIVATE
-   DllGetClassObject    PRIVATE

@@ -1,5 +1,0 @@
-LIBRARY urltrack
-EXPORTS
-        IsLoggingEnabledA
-        IsLoggingEnabledW
-        WriteHitLogging

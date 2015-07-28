@@ -1,5 +1,0 @@
-LIBRARY DevTree
-
-EXPORTS
-    DllInitialize
-    DisplayDeviceTree

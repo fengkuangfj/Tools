@@ -1,5 +1,0 @@
-LIBRARY AUTOENRL
-
-EXPORTS
-
-    ProvAutoEnrollment

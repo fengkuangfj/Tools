@@ -1,4 +1,0 @@
-PPC_SOURCES=..\ppc\kdtrap.c  \
-            ..\ppc\kdreboot.c \
-            ..\ppc\kdcpuapi.c \
-            ..\ppc\kdcmsup.c

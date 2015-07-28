@@ -1,7 +1,0 @@
-LIBRARY         MCIWND
-
-PROTMODE
-
-EXPORTS
-                MCIWndCreate
-                MCIWndRegisterClass

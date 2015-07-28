@@ -1,3 +1,0 @@
-DIRS =  ups \
-        winnt \
-        win95{x86}

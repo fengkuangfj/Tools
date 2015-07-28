@@ -1,6 +1,0 @@
-LIBRARY tlpipe
-
-EXPORTS
-    OSDebug4VersionCheck
-    DBGVersionCheck
-    TLFunc

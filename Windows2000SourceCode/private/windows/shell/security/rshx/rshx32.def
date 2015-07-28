@@ -1,4 +1,0 @@
-LIBRARY         RSHX32
-
-EXPORTS         DllCanUnloadNow    PRIVATE
-                DllGetClassObject  PRIVATE

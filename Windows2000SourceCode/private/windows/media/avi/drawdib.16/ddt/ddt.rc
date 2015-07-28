@@ -1,4 +1,0 @@
-#include <windows.h>
-#include "ddt.h"
-
-AppIcon ICON   ddt.ico

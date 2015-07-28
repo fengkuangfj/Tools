@@ -1,9 +1,0 @@
-DIRS = wrkspc   \
-       od       \
-       memlist  \
-       tl       \
-       ee       \
-       sapi     \
-       symcvt{32} \
-       em       \
-       dm

@@ -1,9 +1,0 @@
-DIRS    = \
-    pro \
-    srv \
-    ent \
-    dtc \
-
-
-OPTIONAL_DIRS=
-

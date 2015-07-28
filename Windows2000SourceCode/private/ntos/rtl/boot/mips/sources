@@ -1,4 +1,0 @@
-MIPS_SOURCES=..\mips\debugstb.s \
-             ..\mips\largeint.s \
-             ..\mips\lzntmips.s \
-             ..\mips\xxmvmem.s

@@ -1,3 +1,0 @@
-#include <windows.h>
-#include <platform.h>
-#include "browseui.rcv"

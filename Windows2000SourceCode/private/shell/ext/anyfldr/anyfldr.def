@@ -1,7 +1,0 @@
-LIBRARY OtherFld
-
-EXPORTS
-        DllGetClassObject
-        DllCanUnloadNow
-        Uninstall
-

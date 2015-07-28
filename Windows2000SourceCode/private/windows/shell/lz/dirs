@@ -1,9 +1,0 @@
-
-DIRS=	libs\
-        lzexpand \
-	dos
-		
-OPTIONAL_DIRS=
-              
-
-

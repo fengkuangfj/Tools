@@ -1,6 +1,0 @@
-CCSHELL_DIR = ..\..
-
-!include ..\srccpp.inc
-
-SOURCES_USED = $(SOURCES_USED) ..\srccpp.inc
-

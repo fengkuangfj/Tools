@@ -1,9 +1,0 @@
-LIBRARY KDMM
-
-EXPORTS
-    help
-    dumpdb
-    WinDbgExtensionDllInit
-    DllInit
-    CheckVersion
-    ExtensionApiVersion

@@ -1,7 +1,0 @@
-# This makefile was generated automatically by mwgenmake.
-
-.NOTPARALLEL:
-
-world all clean install depend:
-	@enterdir srcc    ${MAKE} ${MFLAGS} $@
-	@enterdir dll     ${MAKE} ${MFLAGS} $@

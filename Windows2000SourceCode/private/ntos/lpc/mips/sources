@@ -1,4 +1,0 @@
-MIPS_OPTIONS=-nodwalign
-GPSIZE=32
-
-MIPS_SOURCES=..\mips\lpcmove.s

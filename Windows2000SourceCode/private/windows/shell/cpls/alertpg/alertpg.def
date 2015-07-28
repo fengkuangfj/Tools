@@ -1,8 +1,0 @@
-LIBRARY         SYSDM
-CODE            MOVEABLE DISCARDABLE PRELOAD
-DATA            MOVEABLE PRELOAD SINGLE
-
-HEAPSIZE        1024
-
-EXPORTS
-                CPlApplet

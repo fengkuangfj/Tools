@@ -1,7 +1,0 @@
-LIBRARY T1Instal
-
-EXPORTS
-   CheckCopyrightA
-   ConvertTypefaceA
-   CheckType1A
-   CheckType1WithStatusA @1 NONAME

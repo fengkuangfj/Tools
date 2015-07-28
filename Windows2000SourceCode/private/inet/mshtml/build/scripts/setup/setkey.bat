@@ -1,1 +1,0 @@
-setkey.exe HKey_Classes_Root\CLSID\{25336920-03f9-11cf-8fd0-00aa00686f13}\InProcServer32 "" -s%1
