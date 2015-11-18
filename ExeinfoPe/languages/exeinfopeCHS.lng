@@ -1,0 +1,263 @@
+
+; This is user language file for Exeinfo Pe 0.0.3.3 by A.S.L
+
+
+; TEST VERSION LANGUAGE FILE !!!! possible crash Exeinfo or not
+
+; If Exeinfo find this file config lng will be ignored
+
+; ( ; ) = comment - Exeinfo ignore it , empty line ignored , " " - space not allowed
+; ( _name ) = internal command for exeinfo
+; ( . ) - TForm caption
+; info : You can add any Resource Item Name ( only object with ".caption" allowed )
+; ( & )  - Hot keys info example : &About = "A" Hot key , e&xit = "X" Hot key
+
+; _Charset supported : 
+; ANSI , Arabic , Baltic , chineseBig5 , EastEurope , GB2312 , Greek , Hangeul , MAC , Russian , Turkish
+
+
+_Version=1.21
+_Charset = GB2312  - This is China Simplified. - *You can change to supported charset !
+_Comment = User Language file
+; Charset:GB2312 draft/beta created by MistHill on 24/03/2013, last updated on 25/03/2013
+
+; Main Form1 ----------------------------------------------------------------------
+
+_Main
+
+EP=程序入口:
+Foffset=文件偏移:
+Linker_i=连接器信息:
+FSize=文件大小:
+EP_sec=入口区段:
+FirstB=入口字节:
+SubSys=子系统:
+Overlay=附加数据:
+Diag_=判断:
+Lame_info=初步信息 - 帮助提示 - 脱壳信息
+
+; Hex 2 Dec calculator
+kalk=输入十六进制(Hex)值 - "x"键 - 关闭转换器
+kalk_decHex=输入十进制(Dec)值转换到十六进制(Hex)
+
+; Main form Buttons
+
+But_File=文件(&F):
+Plugi=插件(&G)
+O_prog=关于(&A)
+opcje_but=选项(&O)
+wyjscie=退出(&X)
+RipButton=提取(&P)
+
+; Ripper All Menu items
+
+_RipMenu
+
+exe=提取(在EXE中搜索EXE PE)
+ScanonlyEXEpe=只扫描(搜索EXE PE)
+MSI_RIP=MSI类型( msi / doc / xls / pps / adp / wps )
+
+; GFX pictures    -   RIP Submenu :
+
+GFXRip_Menu=GFX 图片 - 提取 子菜单:
+PNG_rip=PNG - 便携式网络图形
+JPG_rip=JPG - 基本模式(仅限JFIF)
+BMP_rip=BMP - Windows位图
+GIF_rip=GIF - 基本模式(仅限静态)
+AllGFX1=提取所有图片
+
+; BIN archives    -   RIP Submenu :
+
+Arch_Rip_menu=BIN 文件 - 提取 子菜单:
+Rip_zip=提取(搜索ZIP文件)
+Rip_Rararch=提取(搜索Rar文件)
+Rip_7ziparch=提取(搜索7zip文件)
+cab=提取(搜索MSCF CAB文件)
+Rip_Bzip2arch=提取(搜索Bzip2文件)
+Rip_gzipArch=提取(搜索Gzip/Zlib文件)
+Allinone1=提取所有文件
+
+
+www_rip=提取(搜索内部www/http:/ftp:网址)
+Rip_SWFflash=提取(搜索SWF flash动画 - 最高支持v.11)
+Rip_hiddenicon=提取(搜索隐藏NSTD图标数据)
+Rip_xml=提取(搜索.xml版本1.0脚本文件)
+uniRip=通用提取 - 从输入的字符串"???"到文件末尾
+Im_hungry_forRip=极度提取(所有文件)
+
+;Tools Menu items
+
+ExternalRun=运行外部EXE -> (取自exeinfopeRUN.cfg) 最多30项
+OverlayMenu=附加数据 子菜单:
+; submenu
+SaveOverlayifexist=保存附加数据为*.ovl(如果存在)
+Trunk_overlay=截断附加数据(生成新文件)
+Addemptyoverlaydata=添加空附加数据
+Add_overlay_from_file=从文件添加附加数据
+OverlayuncrypterXOR=附加数据解密 XOR(如果附加数据含EXE)
+
+OEPCorrectormenu=入口点 - OEP修正 子菜单:
+; submenu OEP
+EPcorrector1=入口点修正(适用于Delphi / C++ 6 ) - 生成多个文件
+EPcorrector_Del_runtime=入口点修正(适用于Delphi v.5.0) - 运行时方法
+EPcorr_DevC=入口点修正(适用于Dev C++ / MINGW 32 / GCC 32 编译器)
+;
+XoR_permutator=XoR变换 - 生成*.xer文件(xor,or,shl,shr,and)
+sec_stripper=区段提取 - 保存各区段到文件(*.sec 1,2,3 ...)
+rejestry=注册表函数调用扫描 "SOFTWARE, HKLM, HKCU" + CLSID
+SearchCompilerRuntime=搜索编译器运行时引擎 - 仅适用于未压缩文件
+
+eXtraTools=其他工具
+; submenu Tools
+ATunprotector=AT4RE v1.0 Protector - 反保护工具
+sign_count=特征签名检索(使用userdb.txt)
+VBfakeUPX=添加Visual Basic伪签名(仅限UPX压缩)
+ep_1000=设置入口点为1000, 如PEcompact和Asprotect, 并重新扫描
+Flashscrambler=反闪回扰码(Flashback scrambler), 为UPX压缩增加入口点, 并重新扫描
+SavemodifiedBuffertofile=保存修改后缓存内容到文件
+
+; File Menu Items
+
+Rename_file=重命名文件
+CopyAs=复制文件为 ... .bak
+Executecreateprocess=运行(创建exe进程)EXE
+ExecuteRun=运行(Windows关联)DLL, ZIP
+Deletefile1=删除文件(Alt+Del) 全局热键
+FileProp=Windows文件属性(&W)
+Killexe=终止exe在Windows的进程(通过TerminateProcess)
+multiskaner=F2热键 - 多文件扫描 - 扫描文件夹
+Other_detect=鼠标右键 - 其它检测器/脱壳器 子菜单
+Viewlogfile1=全局日志文件 子菜单:
+;submenu Log
+Viewgloballogfile=查看全局日志文件
+Deletelogfile=删除全局日志文件
+;
+snapshot=创建并保存屏幕截图到JPG/PNG文件(&S)
+calculator1=运行计算器(&C)
+hex2dec=转换十六进制Hex值到十进制Dec 及 Dec到Hex(&H)
+Detect_installedNETver=检测已安装的.NET Framework版本(&N)
+
+; Disassemble Menu
+
+disassemblefileview=反汇编文件视图:
+dASMRVA=反汇编RVA
+dAsmVA=反汇编VA( 40xxxx )
+dAsm_fileoffset=反汇编文件偏移
+Searchmenu=搜索菜单:
+binaryHEX=十六进制Hex字节
+string816bit=字符串 8/16位(ASCII/UNICODE)
+ViewHEXfileOffset=查看HEX/ASCII文件偏移
+
+; --------------------------------------------------------------------------------------------
+
+_Config
+
+.=选项设置
+CB_Fscan=快速扫描
+CBox_errors=忽略程序错误
+Label_skin=选择面板皮肤
+CheckBoxTOP=总在最前
+shell_integration=系统右键集成
+closeEI_whenExtRun=运行其它检测器时关闭本程序
+Label2logFile=日志文件:
+Gui_Big=大用户界面
+Label3lang=语言选择:
+; INFO : I copy "okey" value to About Form "OK" Button
+okej=确定
+; *** if exeinfo found exeinfope.lng file - show info on config window
+Ext_lang_file=本地化语言文件已载入
+
+; --------------------------------------------------------------
+
+_Multiscan
+
+multifile_scan=开始扫描(&S)
+wait_czekaj=- >  请等待 ...  < -
+bn_close=关闭(&C)
+Scan_dir=扫描文件夹...
+change_charset=语言(&C)
+
+; MULTISCAN MENU Right Mouse Button
+
+copy_current_l2clip=复制本行到剪贴板
+copyresulttoClip=复制结果到剪贴板
+savetolocalLOGfile=保存结果到本地记录文件
+F_unknownExe=过滤 - 只显示 - 未知文件
+F_hide64bitPEfiles=过滤 - 隐藏64位PE文件
+Hideselectedline=隐藏已选择的行
+Hideidenticaldiagnoselines=隐藏相同结果行
+setFonttoBold=字体切换 -  [ 粗体 / 正常 ]
+Adv_scan_dll=>>>  运行 advanced_scan.dll  <<<
+load_to_exein=载入到ExeInfo PE
+EXITtoWindows=退出 - 回到Windows
+
+; ------------------------------------------------------------------
+
+_Sections
+
+.=区段查看:
+
+GroupBox1=区段属性:
+Check_exec=可执行
+Check_R=可读
+Check_W=可写
+
+SekcjaSize=区段大小:
+
+;Sections Buttons
+
+copyTClip=复制
+SecsStat=统计
+CloseTXT2=关闭
+
+
+;Sections Menu
+viewH=查看( &Hex/Ascii )
+viewASM=查看( ASM 代码 )
+shortjmpcount=短/近JMP总计 ( EB 01 - EB 05 )
+countNOPinstr=NOPs指令总计 ( 90 90. . . )
+stat00section=区段含00h值个数统计 ( % )
+view_search_menu=>>  查看/搜索 子菜单
+Savesectiontodisk=保存区段到磁盘
+
+
+; ------------------------------------------------------------------
+
+_Viewer
+
+.=查看视图
+
+; buttons
+cClip=复制
+CloseTXT=关闭
+
+
+; ------------------------------------------------------------------
+
+; Exe Header Info GUI
+_HeadInfo
+
+.=文件头信息:
+FromHeaderVo=  文件头值:       常用值:
+klip=复制
+CloseW=关闭
+
+;
+;
+;
+;
+;
+
+
+; -------------------------------------------------------------------
+
+_Statistic
+
+back_to_exei=关闭
+sections_but=区段
+
+
+
+; =================================================
+; End of .lng file 
+; =================================================
