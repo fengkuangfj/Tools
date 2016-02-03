@@ -1,5 +1,17 @@
 @echo off
 
+:CheckOs
+if AMD64 == %PROCESSOR_ARCHITECTURE% (
+goto SelectAppType
+) else (
+if x86 == %PROCESSOR_ARCHITECTURE% (
+set APP_TYPE=x86
+goto start
+) else (
+goto exit
+)
+)
+
 :SelectAppType
 echo 请选择被调试程序类型：
 echo x64
@@ -22,5 +34,7 @@ goto SelectAppType
 :start
 taskkill /im msvsmon.exe /t /f
 call %APP_TYPE%\msvsmon.exe /noauth /anyuser /nowowwarn /nosecuritywarn
-
 pause
+goto exit
+
+:exit
