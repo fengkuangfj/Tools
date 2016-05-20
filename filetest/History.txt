@@ -2,6 +2,36 @@
   FileTest history
   ================
 
+ Version 2.6.1.529
+
+ - Improved editor of the security descriptor
+ - Improved editor of the reparse point
+
+ Version 2.6.0.524
+ 
+ - Fixed dialog cleanup
+
+ Version 2.6.0.523
+ 
+ - Byte counts are space separated in copy dialog
+ - Date/Time fields can now accept 64-bit hexa value without separators
+
+ Version 2.6.0.520
+
+ - Improved the "Copy File" command. Now can copy volumes, too.
+ - Fixed invalid determining whether running under restricted token.
+ - Sources backported to VS 2005
+
+ Version 2.6.0.506
+
+ - Improved the "Delete Dir" command. Now can delete folders even with reparse points.
+ - Improved work with reparse points
+
+ Version 2.6.0.503
+
+ - Changed old unsafe str* and sprintf functions to StringCch* versions
+ - Fixed importing streams when there is no EAs
+
  Version 2.6.0.481
 
  - Fixed missing entries in combobox in "Links" page
