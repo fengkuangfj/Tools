@@ -15,7 +15,6 @@ template "Ext2/Ext3/Ext4 Superblock"
 
 description "To be applied to offset 1024 of an Ext2/3/4 partition"
 applies_to disk
-sector-aligned
 
 requires 0x38 "53 EF" // ext2 magic 
 

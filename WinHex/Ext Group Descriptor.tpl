@@ -1,7 +1,7 @@
 template "Ext2/Ext3 Group Descriptor"
 
-// Created by Jens Kirschner on Sep 29, 2004
-// X-Ways Software Technology AG
+// Created by Jens Kirschner 
+// X-Ways Software Technology AG, 2004-2015
 
 description "Locates the meta blocks for a block group"
 applies_to disk
@@ -15,6 +15,10 @@ begin
 	uint16	"Free blocks count"
 	uint16	"Free Inodes count"
 	uint16	"Directories count"
-	uint16	"Padding"	
-	hex 12	"Reserved"
+	uint16	"Flags"	
+	uint32	"Snapshot excl. bitmap"
+	uint16	"Block bitmap checksum"
+	uint16 	"Inode bitmap checksum"
+	uint16	"Never used inode count"
+	uint16 	"Grp desc checksum"	
 end
