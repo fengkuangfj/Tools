@@ -1,10 +1,10 @@
 
 
-Visual Assist X Patch And Key (support ver 1641~2073) and Follow-up version
+Visual Assist X Patch And Key (support ver 1641~2107) and Follow-up version
 
 Visual Assist X 和谐文件说明：
 1. 本和谐文件仅供技术研究，若喜欢 VA_X 请注册购买正版。
-2. 通杀VA_X1641~2073（理论支持后续版本），支持VC6~VS2015，在XP~WIN10系统下测试OK。
+2. 通杀VA_X1641~2107（理论支持后续版本），支持VC6~VS2015，在XP~WIN10系统下测试OK。
 3. 采用了更为巧妙的破解方案，不修改任何代码，不延时，不影响VS启动。
 4. 为防止作者逆向，文件已加壳，杀软可能会误报，请自行决定是否使用。
 5. 部分电脑可能无法注册成功，这个需要看人品，人品佳的请回帖。
@@ -23,6 +23,9 @@ VA_X历史版本下载：http://support.wholetomato.com/default.asp?W422
 PYG解密小组 (254-user license) Support ends 2099.12.31
 00001M-70NDZJ-7RRVVH-7RH4HU-37427D-3TBFTR-TAPC8P-QQM4FR-6P4Y8V-7RK7YC-YFGK8M
 
+
+
+
 特别鸣谢：
 Author：Small-Q、Nisy、ZeNiX、luckly(xxxxxx)、CrackVip
 Thanks：piaoyun、TheEnd，smallhorse，冷月孤心，lucky_789，zaas，gglhy，HyperChem
@@ -31,5 +34,18 @@ special thanks: Mr.eXoDia & Sigma、NoNameX、PYG解密小组
 PYG解密小组  2015.07.01
 
 更新：
+v1.0 2015.08.13
+通杀VA_X 1641~2073
+
 v1.1 2015.08.24
 fix bug ：加壳导致的内存消耗
+
+v1.2 2015.09.01
+增加右键打开 VA_X.DLL 插件目录
+
+v1.3 2016.01.09
+解决2083之后版本针对本和谐补丁随机功能灰化的暗桩。
+
+v1.5 2016.07.27
+增加智能释放补丁的逻辑（若系统已安装补丁且生效则无需更新）。
+增加oledlg.dll的劫持DLL，若其他劫持文件均失败则释放该DLL。
