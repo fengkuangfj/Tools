@@ -57,6 +57,7 @@ Unicode UTF-16LE	txt	\xFF\xFE[\x09\x0A\x0D\x20-\x3C\x40-\x7E\xC0-\xDC]\x00[^\x00
 Text UTF-8	txt	\xEF\xBB\xBF[\x09\x0A\x0D\x20-\x3C\x40-\x7E\xC0-\xDC]	0	~57		G
 MS Office/OLE2	ole2;doc;xls;dot;ppt;xla;ppa;pps;pot;msi;sdw;db;vsd;msg	\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1	0	~16		b
 MS Office 2007+	docx;xlsx;pptx	_Types\]\.xml	38	~14		g
+OpenOffice	odt;ods;odf;odg;odp;odb	Zip Archive				L
 Rich Text Format	RTF;doc	\{\\rtf	0	~20		G
 MS Access	mdb;mda;mde;mdt;fdb;psa	\x00\x01\x00\x00Standard Jet	0	~71
 MS Access 2007	accdb;accde;accda;accdu	\x00\x01\x00\x00Standard ACE DB	0		8388608
@@ -113,7 +114,7 @@ LDAP Data Interchange Format	LDIF;ldf	dn: [a-zA-Z]{1,14}=	0	~56	262144/4194304
 OECustomProperty	FOL;%%%OECustomProperty	1SPS(\x30\xF1\x25\xB7|\xE0\x85\x9F\xF2)	8	~106	8196
 *** Internet
 #INTERNAL1
-XML	xml	[\x09\x0A\x0D\x20]{0,60}<[!\?A-Za-z][-:_A-Za-z]{2,24}[ >\x09\x0A\x0D]	0	~15		GE
+XML/HTML	xml	[\x09\x0A\x0D\x20]{0,60}<[!\?A-Za-z][-:_A-Za-z]{2,24}[ >\x09\x0A\x0D]	0	~15		GE
 SQLite 2.x database	SQLITE2;sqlite;;	\*\* This file contains an SQLite 2\.#	0			t
 SQLite 3.x database	sqlitedb;sqlite3;sqlite;lrcat;exb;itdb;localstorage	SQLite format 3\x00	0	~59		tx
 Mime Html	mht;eml	MIME-Version:\x201\.0\x0D\x0A	0	\x00		fE
@@ -136,13 +137,12 @@ SkyDrive	ms-properties	1SPS\x53\xF1\xEF\xFC\x39\xE8\xF3\x4C\xA9\xE7\xEA\x22	8	~1
 Zip Archive	zip;jar;xps;apk;pages	PK\x03\x04|PK00|PK\x05\x06	0	~14	4194304/536870912	gGE
 Zip (Base64)	B64	UEsDBB[\x0A\x0Da-zA-Z0-9\+/]{256}	0	~101		b
 Jar Archive	JAR1;jar	\x5F\x27\xA8\x89	0
-RAR Archive	rar;cbr	Rar!\x1a\x07\x00	0	~29	4194304/440401920
+RAR Archive	rar;cbr	Rar!\x1a\x07\x00	0	~29	4194304/440401920	C
 GZip Archive	gz;tgz;emz	\x1F\x8B\x08[\x00\x02\x08\x10]....[\x00\x02\x04][\x00-\x12\xFF]	0	~32	1048576/134217728
-7-Zip Archive	7z	7z\xBC\xAF\x27	0	~39	2097152/268435456
+7-Zip Archive	7z	7z\xBC\xAF\x27	0	~39	2097152/268435456	C
 Tar/PAX Archive	tar	ustar	257	~31	1048576/205520896	G
-BZip Archive	BZ2;tbz	BZ[0h]#\x31\x41\x59\x26	0
+BZip Archive	BZ2;tbz	BZ[0h]#\x31\x41\x59\x26	0			C
 MS Compressed	cab	MSCF\x00\x00\x00\x00	0	~82
-ARJ Archive	arj	\x60\xEA......[\x00\x10\x14]\x00\x02	0
 XZ Archive	xz	\xFD7zXZ\x00\x00	0
 Stuffit SFX Archive	sea	APPLaust!	65			c
 Stuffit Archive	sitx	StuffIt!	0			c
@@ -156,7 +156,7 @@ ALZip EGG compressed	egg	EGGA\x00	0			c
 Free Backup Fix	fbf	SymBakUp  1\.0\x0A\x1A\x01	0	FHT1.\x00{19}	2621440/104857600	c
 KGB Archive	kgb	KGB_arch -	0
 *** Music/Video
-MP3 ID3 v2/3/4	mp3	ID3[\x02-\x04]\x00[\x00\x20\x40\x80][\x00\x01]	0		6000000	E
+MP3 ID3 v2/3/4	mp3	ID3[\x02-\x04]\x00[\x00\x20\x40\x80][\x00\x01]	0		6000000	EC
 MP3 general	mp3	\xFF[\xE2\xE3\xF2\xF3\xFA\xFB][\x10-\x1B\x20-\x2B\x30-\x3B\x40-\x4B\x50-\x5B\x60-\x6B\x70-\x7B\x80-\x8B\x90-\x9B\xA0-\xAB\xB0-\xBB\xC0-\xCB\xD0-\xDB\xE0-\xEB]	0	~21		cCGE
 Wave	wav	RIFF....WAVE(fmt |JUNK|LIST|bext|fact)	0	~33
 Audio Video Interleave	AVI;gvi;divx RIFF....(LIST|JUNK|AVI )	0	~33	10000000/1610612736
@@ -343,3 +343,4 @@ SQL	sql	-- (Generate|MySQL|phpMyAdmin|Copyright)	0	~56
 XML fragment	xml	<\?xml version=[\x22\x27]1\.0	0	~15	8196/32000	b
 Comma separated	csv	\x22[\x22A-Z]|Name|First	0	~107	1024/1048576	GS
 Windows.edb fragment	1sps	1SPS\xA6\x6A\x63\x28\x3D\x95\xD2\x11\xB5\xD6\x00\xC0\x4F\xD9\x18\xD0	8	~106	4096	b
+Bitlocker rec key	bitlocker	\xFF\xFE\x42\x00\x69\x00\x74\x00\x4C\x00\x6F\x00\x63\x00\x6B\x00\x65\x00\x72\x00\x20\x00	0	~48	1500
