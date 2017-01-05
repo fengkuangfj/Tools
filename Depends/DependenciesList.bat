@@ -1,6 +1,6 @@
 @echo off
 
-echo 璇疯緭鍏ラ渶瑕佹煡璇㈢殑鏂囦欢鐨勫叏璺緞(鏀寔鎷栨嫿) :
+echo 请输入需要查询的文件的全路径(支持拖拽) :
 set /p IMAGE_PATH=
 
 set IMAGE_PATH=%IMAGE_PATH:"=%
