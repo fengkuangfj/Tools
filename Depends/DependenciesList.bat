@@ -29,3 +29,4 @@ del /f /q /a "DependenciesList.log"
 
 rem dumpbin /dependents "%IMAGE_PATH%" >"DependenciesList.log"
 dumpbin /imports "%IMAGE_PATH%" >"DependenciesList.log"
+call "DependenciesList.log"
