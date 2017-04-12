@@ -1,0 +1,23 @@
+typedef struct tagPDEXA {
+   DWORD                 lStructSize;          // size of structure in bytes
+   HWND                  hwndOwner;            // caller's window handle
+   HGLOBAL               hDevMode;             // handle to DevMode
+   HGLOBAL               hDevNames;            // handle to DevNames
+   HDC                   hDC;                  // printer DC/IC or NULL
+   DWORD                 Flags;                // PD_ flags
+   DWORD                 Flags2;               // reserved
+   DWORD                 ExclusionFlags;       // items to exclude from driver pages
+   DWORD                 nPageRanges;          // number of page ranges
+   DWORD                 nMaxPageRanges;       // max number of page ranges
+   PVOID                 lpPageRanges;         // array of page ranges
+   DWORD                 nMinPage;             // min page number
+   DWORD                 nMaxPage;             // max page number
+   DWORD                 nCopies;              // number of copies
+   HINSTANCE             hInstance;            // instance handle
+   LPCSTR                lpPrintTemplateName;  // template name for app specific area
+   PVOID                 lpCallback;           // app callback interface
+   DWORD                 nPropertyPages;       // number of app property pages in lphPropertyPages
+   HPROPSHEETPAGE*       lphPropertyPages;     // array of app property page handles
+   DWORD                 nStartPage;           // start page id
+   DWORD                 dwResultAction;       // result action if S_OK is returned
+} PRINTDLGEXA, *LPPRINTDLGEXA;

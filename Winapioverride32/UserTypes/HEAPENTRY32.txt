@@ -1,0 +1,14 @@
+typedef struct tagHEAPENTRY32
+{
+    SIZE_T dwSize;
+    HANDLE hHandle;     // Handle of this heap block
+    ULONG_PTR dwAddress;   // Linear address of start of block
+    SIZE_T dwBlockSize; // Size of block in bytes
+    DWORD  dwFlags;
+    DWORD  dwLockCount;
+    DWORD  dwResvd;
+    DWORD  th32ProcessID;   // owning process
+    ULONG_PTR  th32HeapID;      // heap block is in
+} HEAPENTRY32;
+typedef HEAPENTRY32 *  PHEAPENTRY32;
+typedef HEAPENTRY32 *  LPHEAPENTRY32;

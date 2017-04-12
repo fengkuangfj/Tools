@@ -1,0 +1,9 @@
+typedef struct WSAData64 {
+        WORD                    wVersion;
+        WORD                    wHighVersion;
+        short                   iMaxSockets;
+        short                   iMaxUdpDg;
+        char*                   lpVendorInfo;
+        char                    szDescription[257];
+        char                    szSystemStatus[129];
+} WSADATA64;

@@ -1,0 +1,14 @@
+typedef struct tagFINDREPLACEA {
+   DWORD        lStructSize;        // size of this struct 0x20
+   HWND         hwndOwner;          // handle to owner's window
+   HINSTANCE    hInstance;          // instance handle of.EXE that
+                                    //   contains cust. dlg. template
+   DWORD        Flags;              // one or more of the FR_??
+   LPSTR        lpstrFindWhat;      // ptr. to search string
+   LPSTR        lpstrReplaceWith;   // ptr. to replace string
+   WORD         wFindWhatLen;       // size of find buffer
+   WORD         wReplaceWithLen;    // size of replace buffer
+   LPARAM       lCustData;          // data passed to hook fn.
+   PVOID        lpfnHook;           // ptr. to hook fn. or NULL
+   LPCSTR       lpTemplateName;     // custom template name
+} FINDREPLACEA, *LPFINDREPLACEA;

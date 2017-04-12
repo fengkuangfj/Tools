@@ -1,0 +1,22 @@
+typedef struct _SHELLEXECUTEINFOA
+{
+    DWORD cbSize;               // in, required, sizeof of this structure
+    ULONG fMask;                // in, SEE_MASK_XXX values
+    HWND hwnd;                  // in, optional
+    LPCSTR   lpVerb;            // in, optional when unspecified the default verb is choosen
+    LPCSTR   lpFile;            // in, either this value or lpIDList must be specified
+    LPCSTR   lpParameters;      // in, optional
+    LPCSTR   lpDirectory;       // in, optional
+    int nShow;                  // in, required
+    HINSTANCE hInstApp;         // out when SEE_MASK_NOCLOSEPROCESS is specified
+    void *lpIDList;             // in, valid when SEE_MASK_IDLIST is specified, PCIDLIST_ABSOLUTE, for use with SEE_MASK_IDLIST & SEE_MASK_INVOKEIDLIST
+    LPCSTR   lpClass;           // in, valid when SEE_MASK_CLASSNAME is specified
+    HKEY hkeyClass;             // in, valid when SEE_MASK_CLASSKEY is specified
+    DWORD dwHotKey;             // in, valid when SEE_MASK_HOTKEY is specified
+    union                       
+    {                           
+        HANDLE hIcon;           // not used
+        HANDLE hMonitor;        // in, valid when SEE_MASK_HMONITOR specified
+    } DUMMYUNIONNAME;           
+    HANDLE hProcess;            // out, valid when SEE_MASK_NOCLOSEPROCESS specified
+} SHELLEXECUTEINFOA, *LPSHELLEXECUTEINFOA;

@@ -1,0 +1,15 @@
+typedef struct tagPROCESSENTRY32
+{
+    DWORD   dwSize;
+    DWORD   cntUsage;
+    DWORD   th32ProcessID;          // this process
+    ULONG_PTR th32DefaultHeapID;
+    DWORD   th32ModuleID;           // associated exe
+    DWORD   cntThreads;
+    DWORD   th32ParentProcessID;    // this process's parent process
+    LONG    pcPriClassBase;         // Base priority of process's threads
+    DWORD   dwFlags;
+    CHAR    szExeFile[260];    // Path
+} PROCESSENTRY32;
+typedef PROCESSENTRY32 *  PPROCESSENTRY32;
+typedef PROCESSENTRY32 *  LPPROCESSENTRY32;

@@ -1,0 +1,12 @@
+typedef struct _COMMCONFIG {
+    DWORD dwSize;               /* Size of the entire struct */
+    WORD wVersion;              /* version of the structure */
+    WORD wReserved;             /* alignment */
+    DCB dcb;                    /* device control block */
+    DWORD dwProviderSubType;    /* ordinal value for identifying
+                                   provider-defined data structure format*/
+    DWORD dwProviderOffset;     /* Specifies the offset of provider specific
+                                   data field in bytes from the start */
+    DWORD dwProviderSize;       /* size of the provider-specific data field */
+    WCHAR wcProviderData[1];    /* provider-specific data */
+} COMMCONFIG,*LPCOMMCONFIG;

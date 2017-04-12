@@ -1,0 +1,8 @@
+typedef struct _RTL_CRITICAL_SECTION {
+    PRTL_CRITICAL_SECTION_DEBUG DebugInfo;
+    LONG LockCount;
+    LONG RecursionCount;
+    HANDLE OwningThread;        // from the thread's ClientId->UniqueThread
+    HANDLE LockSemaphore;
+    ULONG_PTR SpinCount;        // force size on 64-bit systems when packed
+}RTL_CRITICAL_SECTION, *PRTL_CRITICAL_SECTION;

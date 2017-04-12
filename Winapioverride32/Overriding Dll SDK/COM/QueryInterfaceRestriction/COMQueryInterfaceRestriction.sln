@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FakeCOMQueryInterfaceRestriction", "COMQueryInterfaceRestriction.vcxproj", "{592A90A3-A42A-4985-9E90-B77906079018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		DebugUnicode|Win32 = DebugUnicode|Win32
+		DebugUnicode|x64 = DebugUnicode|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		ReleaseUnicode|Win32 = ReleaseUnicode|Win32
+		ReleaseUnicode|x64 = ReleaseUnicode|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{592A90A3-A42A-4985-9E90-B77906079018}.Debug|Win32.ActiveCfg = Debug|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.Debug|Win32.Build.0 = Debug|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.Debug|x64.ActiveCfg = Debug|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.Debug|x64.Build.0 = Debug|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.DebugUnicode|Win32.ActiveCfg = DebugUnicode|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.DebugUnicode|Win32.Build.0 = DebugUnicode|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.DebugUnicode|x64.ActiveCfg = DebugUnicode|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.DebugUnicode|x64.Build.0 = DebugUnicode|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.Release|Win32.ActiveCfg = Release|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.Release|Win32.Build.0 = Release|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.Release|x64.ActiveCfg = Release|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.Release|x64.Build.0 = Release|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.ReleaseUnicode|Win32.ActiveCfg = ReleaseUnicode|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.ReleaseUnicode|Win32.Build.0 = ReleaseUnicode|Win32
+		{592A90A3-A42A-4985-9E90-B77906079018}.ReleaseUnicode|x64.ActiveCfg = ReleaseUnicode|x64
+		{592A90A3-A42A-4985-9E90-B77906079018}.ReleaseUnicode|x64.Build.0 = ReleaseUnicode|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

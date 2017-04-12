@@ -1,0 +1,8 @@
+typedef struct {
+  PVOID szReader;
+  LPVOID pvUserData;
+  DWORD dwCurrentState;
+  DWORD dwEventState;
+  DWORD cbAtr;
+  BYTE rgbAtr[36];
+} SCARD_READERSTATE, *PSCARD_READERSTATE, *LPSCARD_READERSTATE;

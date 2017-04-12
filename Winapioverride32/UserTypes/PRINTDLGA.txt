@@ -1,0 +1,21 @@
+typedef struct tagPDA {
+   DWORD            lStructSize;
+   HWND             hwndOwner;
+   HGLOBAL          hDevMode;
+   HGLOBAL          hDevNames;
+   HDC              hDC;
+   DWORD            Flags;
+   WORD             nFromPage;
+   WORD             nToPage;
+   WORD             nMinPage;
+   WORD             nMaxPage;
+   WORD             nCopies;
+   HINSTANCE        hInstance;
+   LPARAM           lCustData;
+   PVOID            lpfnPrintHook;
+   PVOID            lpfnSetupHook;
+   LPCSTR           lpPrintTemplateName;
+   LPCSTR           lpSetupTemplateName;
+   HGLOBAL          hPrintTemplate;
+   HGLOBAL          hSetupTemplate;
+} PRINTDLGA, *LPPRINTDLGA;

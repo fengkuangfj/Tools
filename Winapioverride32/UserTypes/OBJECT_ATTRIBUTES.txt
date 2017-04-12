@@ -1,0 +1,9 @@
+typedef struct _OBJECT_ATTRIBUTES {
+    ULONG Length;
+    HANDLE RootDirectory;
+    PUNICODE_STRING ObjectName;
+    ULONG Attributes;
+    PVOID SecurityDescriptor;        // Points to type SECURITY_DESCRIPTOR
+    PVOID SecurityQualityOfService;  // Points to type SECURITY_QUALITY_OF_SERVICE
+} OBJECT_ATTRIBUTES;
+typedef OBJECT_ATTRIBUTES *POBJECT_ATTRIBUTES;

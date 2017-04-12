@@ -1,0 +1,7 @@
+typedef enum _SHGDNF { 
+  SHGDN_NORMAL         = 0,
+  SHGDN_INFOLDER       = 0x1,
+  SHGDN_FOREDITING     = 0x1000,
+  SHGDN_FORADDRESSBAR  = 0x4000,
+  SHGDN_FORPARSING     = 0x8000
+} SHGDNF;

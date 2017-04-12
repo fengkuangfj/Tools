@@ -1,0 +1,4 @@
+typedef struct _COLORMAP {
+    COLORREF from;
+    COLORREF to;
+} COLORMAP, *LPCOLORMAP;

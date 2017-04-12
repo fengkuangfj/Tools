@@ -1,0 +1,7 @@
+struct  hostent {
+        char*  h_name;      /* official name of host */
+        char** h_aliases;   /* alias list */
+        short  h_addrtype;  /* host address type */
+        short  h_length;    /* length of address */
+        char** h_addr_list; /* list of addresses */
+};

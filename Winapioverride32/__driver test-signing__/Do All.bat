@@ -1,0 +1,5 @@
+echo "MUST BE RUN AS ADMINISTRATOR"
+@call "Create Debug Certificate.bat"
+@call "Sign binary.bat"
+@call "Enable Test Signing.bat"
+echo "Reboot your computer"

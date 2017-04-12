@@ -1,0 +1,2 @@
+typedef SecHandle CtxtHandle;
+typedef PSecHandle PCtxtHandle;

@@ -1,0 +1,5 @@
+typedef struct _SCARD_ATRMASK {
+  DWORD cbAtr; 
+  BYTE rgbAtr[36]; 
+  BYTE rgbMask[36]; 
+} SCARD_ATRMASK, *PSCARD_ATRMASK, *LPSCARD_ATRMASK;

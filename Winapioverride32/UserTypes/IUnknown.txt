@@ -1,0 +1,12 @@
+
+typedef struct IUnknownVtbl
+{
+    PVOID QueryInterface;
+    PVOID AddRef;
+    PVOID Release;
+} IUnknownVtbl;
+
+typedef struct IUnknown
+{
+    IUnknownVtbl *lpVtbl;
+};

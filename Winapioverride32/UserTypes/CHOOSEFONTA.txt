@@ -1,0 +1,23 @@
+typedef struct tagCHOOSEFONTA {
+   DWORD           lStructSize;
+   HWND            hwndOwner;          // caller's window handle
+   HDC             hDC;                // printer DC/IC or NULL
+   LPLOGFONTA      lpLogFont;          // ptr. to a LOGFONT struct
+   INT             iPointSize;         // 10 * size in points of selected font
+   DWORD           Flags;              // enum. type flags
+   COLORREF        rgbColors;          // returned text color
+   LPARAM          lCustData;          // data passed to hook fn.
+   PVOID           lpfnHook;           // ptr. to hook function
+   LPCSTR          lpTemplateName;     // custom template name
+   HINSTANCE       hInstance;          // instance handle of.EXE that
+                                       //   contains cust. dlg. template
+   LPSTR           lpszStyle;          // return the style field here
+                                       // must be LF_FACESIZE or bigger
+   WORD            nFontType;          // same value reported to the EnumFonts
+                                       //   call back with the extra FONTTYPE_
+                                       //   bits added
+   WORD            ___MISSING_ALIGNMENT__;
+   INT             nSizeMin;           // minimum pt size allowed &
+   INT             nSizeMax;           // max pt size allowed if
+                                       //   CF_LIMITSIZE is used
+} CHOOSEFONTA;

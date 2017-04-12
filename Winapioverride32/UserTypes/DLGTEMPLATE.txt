@@ -1,0 +1,9 @@
+typedef struct {
+    DWORD style;
+    DWORD dwExtendedStyle;
+    WORD cdit;
+    short x;
+    short y;
+    short cx;
+    short cy;
+} DLGTEMPLATE;

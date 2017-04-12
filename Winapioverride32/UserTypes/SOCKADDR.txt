@@ -1,0 +1,4 @@
+typedef struct sockaddr {
+    USHORT sa_family;
+    CHAR sa_data[14];
+} SOCKADDR, *PSOCKADDR, FAR *LPSOCKADDR;

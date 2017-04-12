@@ -1,0 +1,10 @@
+typedef struct _browseinfoW {
+    HWND        hwndOwner;
+    void*       pidlRoot;
+    LPWSTR      pszDisplayName;        // Return display name of item selected.
+    LPCWSTR     lpszTitle;             // text to go in the banner over the tree.
+    UINT        ulFlags;               // Flags that control the return stuff
+    void*       lpfn;
+    LPARAM      lParam;                // extra info that's passed back in callbacks
+    int         iImage;                // output var: where to return the Image index.
+} BROWSEINFOW, *PBROWSEINFOW, *LPBROWSEINFOW;

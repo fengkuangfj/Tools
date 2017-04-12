@@ -1,0 +1,21 @@
+typedef struct {
+  DWORD           dwSize;
+  DWORD           dwFlags;
+  HINSTANCE       hInstance;
+  union {
+    LPCSTR         pszTemplate;
+    LPCDLGTEMPLATE pResource;
+  };
+  union {
+    HICON  hIcon;
+    LPCSTR pszIcon;
+  };
+  LPCSTR          pszTitle;
+  DLGPROC         pfnDlgProc;
+  LPARAM          lParam;
+  PVOID           pfnCallback;
+  UINT*           pcRefParent;
+  LPCWSTR         pszHeaderTitle;
+  LPCWSTR         pszHeaderSubTitle;
+  HANDLE          hActCtx;
+} PROPSHEETPAGEW, *LPPROPSHEETPAGEW;

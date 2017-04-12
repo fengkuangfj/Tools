@@ -1,0 +1,8 @@
+typedef struct _SHFILEINFOW
+{
+        HICON       hIcon;                      // out: icon
+        int         iIcon;                      // out: icon index
+        DWORD       dwAttributes;               // out: SFGAO_ flags
+        WCHAR       szDisplayName[260];         // out: display name (or path)
+        WCHAR       szTypeName[80];             // out: type name
+} SHFILEINFOW;

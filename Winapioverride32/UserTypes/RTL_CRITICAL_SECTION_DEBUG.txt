@@ -1,0 +1,11 @@
+typedef struct _RTL_CRITICAL_SECTION_DEBUG {
+    WORD  Type;
+    WORD  CreatorBackTraceIndex;
+    VOID* CriticalSection;
+    LIST_ENTRY ProcessLocksList;
+    DWORD EntryCount;
+    DWORD ContentionCount;
+    DWORD Flags;
+    WORD  CreatorBackTraceIndexHigh;
+    WORD  SpareWORD  ;
+}RTL_CRITICAL_SECTION_DEBUG,*PRTL_CRITICAL_SECTION_DEBUG,RTL_RESOURCE_DEBUG,*PRTL_RESOURCE_DEBUG;

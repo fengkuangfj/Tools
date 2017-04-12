@@ -1,0 +1,4 @@
+typedef struct _WSABUF {
+    ULONG len; /* the length of the buffer */
+    CHAR* buf; /* the pointer to the buffer */
+} WSABUF, *LPWSABUF;

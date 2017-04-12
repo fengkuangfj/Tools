@@ -1,0 +1,7 @@
+typedef struct _COMMTIMEOUTS {
+    DWORD ReadIntervalTimeout;          /* Maximum time between read chars. */
+    DWORD ReadTotalTimeoutMultiplier;   /* Multiplier of characters.        */
+    DWORD ReadTotalTimeoutConstant;     /* Constant in milliseconds.        */
+    DWORD WriteTotalTimeoutMultiplier;  /* Multiplier of characters.        */
+    DWORD WriteTotalTimeoutConstant;    /* Constant in milliseconds.        */
+} COMMTIMEOUTS,*LPCOMMTIMEOUTS;

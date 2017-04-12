@@ -1,0 +1,7 @@
+typedef struct _WSAPROTOCOLCHAIN {
+    int ChainLen;                                 /* the length of the chain,     */
+                                                  /* length = 0 means layered protocol, */
+                                                  /* length = 1 means base protocol, */
+                                                  /* length > 1 means protocol chain */
+    DWORD ChainEntries[7];                        /* a list of dwCatalogEntryIds */
+} WSAPROTOCOLCHAIN, *LPWSAPROTOCOLCHAIN;

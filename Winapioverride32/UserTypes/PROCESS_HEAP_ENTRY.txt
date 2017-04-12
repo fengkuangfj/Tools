@@ -1,0 +1,19 @@
+typedef struct _PROCESS_HEAP_ENTRY {
+    PVOID lpData;
+    DWORD cbData;
+    BYTE cbOverhead;
+    BYTE iRegionIndex;
+    WORD wFlags;
+    union {
+        struct {
+            HANDLE hMem;
+            DWORD dwReserved[ 3 ];
+        } Block;
+        struct {
+            DWORD dwCommittedSize;
+            DWORD dwUnCommittedSize;
+            LPVOID lpFirstBlock;
+            LPVOID lpLastBlock;
+        } Region;
+    } DUMMYUNIONNAME;
+} PROCESS_HEAP_ENTRY, *LPPROCESS_HEAP_ENTRY, *PPROCESS_HEAP_ENTRY;

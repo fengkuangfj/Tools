@@ -1,0 +1,2 @@
+typedef SecHandle CredHandle;
+typedef PSecHandle PCredHandle;

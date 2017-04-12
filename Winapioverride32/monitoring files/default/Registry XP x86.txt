@@ -1,0 +1,106 @@
+advapi32.dll|RegCloseKey(HKEY hKey);|FailureIfNotNullRet
+advapi32.dll|RegConnectRegistryA(LPCSTR lpMachineName,HKEY hKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegConnectRegistryW(LPCWSTR lpMachineName,HKEY hKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegCreateKeyA(HKEY hKey,LPCSTR lpSubKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegCreateKeyW(HKEY hKey,LPCWSTR lpSubKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegCreateKeyExA(HKEY hKey,LPCSTR lpSubKey,DWORD Reserved, LPSTR lpClass,DWORD dwOptions,REGSAM samDesired,LPSECURITY_ATTRIBUTES lpSecurityAttributes,PHKEY phkResult,LPDWORD lpdwDisposition);|Out|FailureIfNotNullRet
+advapi32.dll|RegCreateKeyExW(HKEY hKey,LPCWSTR lpSubKey,DWORD Reserved, LPWSTR lpClass,DWORD dwOptions,REGSAM samDesired,LPSECURITY_ATTRIBUTES lpSecurityAttributes,PHKEY phkResult,LPDWORD lpdwDisposition);|Out|FailureIfNotNullRet
+advapi32.dll|RegDeleteKeyA(HKEY hKey,LPCSTR lpSubKey);|FailureIfNotNullRet
+advapi32.dll|RegDeleteKeyW(HKEY hKey,LPCWSTR lpSubKey);|FailureIfNotNullRet
+advapi32.dll|RegDeleteValueA(HKEY hKey,LPCSTR lpValueName);|FailureIfNotNullRet
+advapi32.dll|RegDeleteValueW(HKEY hKey,LPCWSTR lpValueName);|FailureIfNotNullRet
+advapi32.dll|RegDisablePredefinedCache();|FailureIfNotNullRet
+advapi32.dll|RegEnumKeyA(HKEY hKey,DWORD dwIndex,LPSTR lpName,DWORD cchName);|out|FailureIfNotNullRet
+advapi32.dll|RegEnumKeyW(HKEY hKey,DWORD dwIndex,LPWSTR lpName,DWORD cchName);|out|FailureIfNotNullRet
+advapi32.dll|RegEnumKeyExA(HKEY hKey,DWORD dwIndex,LPSTR lpName,LPDWORD lpcName,LPDWORD lpReserved,LPSTR lpClass,LPDWORD lpcClass,PFILETIME lpftLastWriteTime);|out|FailureIfNotNullRet
+advapi32.dll|RegEnumKeyExW(HKEY hKey,DWORD dwIndex,LPWSTR lpName,LPDWORD lpcName,LPDWORD lpReserved,LPWSTR lpClass,LPDWORD lpcClass,PFILETIME lpftLastWriteTime);|out|FailureIfNotNullRet
+advapi32.dll|RegEnumValueA(HKEY hKey,DWORD dwIndex,LPSTR lpValueName,LPDWORD lpcValueName,LPDWORD lpReserved,LPDWORD lpType,LPBYTE lpData,LPDWORD lpcbData);|out|FailureIfNotNullRet
+advapi32.dll|RegEnumValueW(HKEY hKey,DWORD dwIndex,LPWSTR lpValueName,LPDWORD lpcValueName,LPDWORD lpReserved,LPDWORD lpType,LPBYTE lpData,LPDWORD lpcbData);|out|FailureIfNotNullRet
+advapi32.dll|RegFlushKey(HKEY hKey);|FailureIfNotNullRet
+advapi32.dll|RegLoadKeyA(HKEY hKey,LPCSTR lpSubKey,LPCSTR lpFile);|FailureIfNotNullRet
+advapi32.dll|RegLoadKeyW(HKEY hKey,LPCWSTR lpSubKey,LPCWSTR lpFile);|FailureIfNotNullRet
+advapi32.dll|RegNotifyChangeKeyValue(HKEY hKey,BOOL bWatchSubtree,DWORD dwNotifyFilter,HANDLE hEvent,BOOL fAsynchronous);|FailureIfNotNullRet
+advapi32.dll|RegOpenCurrentUser(REGSAM samDesired,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOpenKeyA(HKEY hKey,LPCSTR lpSubKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOpenKeyW(HKEY hKey,LPCWSTR lpSubKey,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOpenKeyExA(HKEY hKey,LPCSTR lpSubKey,DWORD ulOptions,REGSAM samDesired,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOpenKeyExW(HKEY hKey,LPCWSTR lpSubKey,DWORD ulOptions,REGSAM samDesired,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOpenUserClassesRoot(HANDLE hToken,DWORD dwOptions,REGSAM samDesired,PHKEY phkResult);|Out|FailureIfNotNullRet
+advapi32.dll|RegOverridePredefKey(HKEY hKey,HKEY hNewHKey);|FailureIfNotNullRet
+advapi32.dll|RegQueryInfoKeyA(HKEY hKey,LPSTR lpClass,LPDWORD lpcClass,LPDWORD lpReserved,LPDWORD lpcSubKeys,LPDWORD lpcMaxSubKeyLen,LPDWORD lpcMaxClassLen,LPDWORD lpcValues,LPDWORD lpcMaxValueNameLen,LPDWORD lpcMaxValueLen,LPDWORD lpcbSecurityDescriptor,PFILETIME lpftLastWriteTime);|out|FailureIfNotNullRet
+advapi32.dll|RegQueryInfoKeyW(HKEY hKey,LPWSTR lpClass,LPDWORD lpcClass,LPDWORD lpReserved,LPDWORD lpcSubKeys,LPDWORD lpcMaxSubKeyLen,LPDWORD lpcMaxClassLen,LPDWORD lpcValues,LPDWORD lpcMaxValueNameLen,LPDWORD lpcMaxValueLen,LPDWORD lpcbSecurityDescriptor,PFILETIME lpftLastWriteTime);|out|FailureIfNotNullRet
+advapi32.dll|RegQueryMultipleValuesA(HKEY hKey,PVALENT val_list,DWORD num_vals,LPSTR lpValueBuf,LPDWORD ldwTotsize);|InOut|FailureIfNotNullRet
+advapi32.dll|RegQueryMultipleValuesW(HKEY hKey,PVALENT val_list,DWORD num_vals,LPWSTR lpValueBuf,LPDWORD ldwTotsize);|InOut|FailureIfNotNullRet
+advapi32.dll|RegQueryValueA(HKEY hKey,LPCSTR lpSubKey,LPTSTR lpValue,PLONG lpcbValue);|out|FailureIfNotNullRet
+advapi32.dll|RegQueryValueW(HKEY hKey,LPCWSTR lpSubKey,LPTSTR lpValue,PLONG lpcbValue);|out|FailureIfNotNullRet
+advapi32.dll|RegQueryValueExA(HKEY hKey,LPCSTR lpValueName,LPDWORD lpReserved,LPDWORD lpType,LPBYTE lpData,LPDWORD lpcbData);|out|FailureIfNotNullRet
+advapi32.dll|RegQueryValueExW(HKEY hKey,LPCWSTR lpValueName,LPDWORD lpReserved,LPDWORD lpType,LPBYTE lpData,LPDWORD lpcbData);|out|FailureIfNotNullRet
+advapi32.dll|RegReplaceKeyA(HKEY hKey,LPCSTR lpSubKey,LPCSTR lpNewFile,LPCSTR lpOldFile);|FailureIfNotNullRet
+advapi32.dll|RegReplaceKeyW(HKEY hKey,LPCWSTR lpSubKey,LPCWSTR lpNewFile,LPCWSTR lpOldFile);|FailureIfNotNullRet
+advapi32.dll|RegRestoreKeyA(HKEY hKey,LPCSTR lpFile,DWORD dwFlags);|FailureIfNotNullRet
+advapi32.dll|RegRestoreKeyW(HKEY hKey,LPCWSTR lpFile,DWORD dwFlags);|FailureIfNotNullRet
+advapi32.dll|RegSaveKeyA(HKEY hKey,LPCSTR lpFile,LPSECURITY_ATTRIBUTES lpSecurityAttributes);|FailureIfNotNullRet
+advapi32.dll|RegSaveKeyW(HKEY hKey,LPCWSTR lpFile,LPSECURITY_ATTRIBUTES lpSecurityAttributes);|FailureIfNotNullRet
+advapi32.dll|RegSaveKeyExA(HKEY hKey,LPCSTR lpFile,LPSECURITY_ATTRIBUTES lpSecurityAttributes,DWORD Flags);|FailureIfNotNullRet
+advapi32.dll|RegSaveKeyExW(HKEY hKey,LPCWSTR lpFile,LPSECURITY_ATTRIBUTES lpSecurityAttributes,DWORD Flags);|FailureIfNotNullRet
+advapi32.dll|RegSetValueA(HKEY hKey,LPCSTR lpSubKey,DWORD dwType,LPCSTR lpData:PointedDataSize=Arg5,DWORD cbData);|FailureIfNotNullRet
+advapi32.dll|RegSetValueW(HKEY hKey,LPCWSTR lpSubKey,DWORD dwType,LPCWSTR lpData:PointedDataSize=Arg5,DWORD cbData);|FailureIfNotNullRet
+advapi32.dll|RegSetValueExA(HKEY hKey,LPCSTR lpValueName,DWORD Reserved,DWORD dwType,BYTE* lpData:PointedDataSize=Arg6,DWORD cbData);|FailureIfNotNullRet
+advapi32.dll|RegSetValueExW(HKEY hKey,LPCWSTR lpValueName,DWORD Reserved,DWORD dwType,BYTE* lpData:PointedDataSize=Arg6,DWORD cbData);|FailureIfNotNullRet
+advapi32.dll|RegUnLoadKeyA(HKEY hKey,LPCSTR lpSubKey);|FailureIfNotNullRet
+advapi32.dll|RegUnLoadKeyW(HKEY hKey,LPCWSTR lpSubKey);|FailureIfNotNullRet
+
+
+ntdll.dll|NtCompressKey(HANDLE KeyHandle)|FailureIfNotNullRet
+ntdll.dll|NtCompactKeys(ULONG NbKeys,HANDLE* KeysArray:PointedDataSize=Arg1*4)|FailureIfNotNullRet
+;FOR x64: ntdll.dll|NtCompactKeys(ULONG NbKeys,HANDLE* KeysArray:PointedDataSize=Arg1*8)|FailureIfNotNullRet
+
+ntdll.dll|NtCreateKey(PHANDLE pKeyHandle,ACCESS_MASK DesiredAccess,POBJECT_ATTRIBUTES ObjectAttributes,ULONG TitleIndex,PUNICODE_STRING Class,ULONG CreateOptions,PULONG Disposition)|Out|FailureIfNotNullRet
+ntdll.dll|NtCreateKeyedEvent(PHANDLE OutHandle,ACCESS_MASK AccessMask,POBJECT_ATTRIBUTES ObjectAttributes,ULONG Flags)|Out|FailureIfNotNullRet
+ntdll.dll|NtDeleteKey(HANDLE KeyHandle)|FailureIfNotNullRet
+ntdll.dll|NtDeleteValueKey(HANDLE KeyHandle,PUNICODE_STRING ValueName)|FailureIfNotNullRet
+ntdll.dll|NtEnumerateKey(HANDLE KeyHandle,ULONG Index,KEY_INFORMATION_CLASS KeyInformationClass,PVOID KeyInformation,ULONG Length,PULONG ResultLength)|Out|FailureIfNotNullRet
+ntdll.dll|NtEnumerateValueKey(HANDLE KeyHandle,ULONG Index,KEY_VALUE_INFORMATION_CLASS KeyValueInformation,PVOID KeyValueInformation,ULONG Length,PULONG ResultLength)|Out|FailureIfNotNullRet
+ntdll.dll|NtFlushKey(HANDLE KeyHandle)|FailureIfNotNullRet
+ntdll.dll|NtInitializeRegistry(USHORT BootCondition)|FailureIfNotNullRet
+ntdll.dll|NtLoadKey(POBJECT_ATTRIBUTES DestinationKeyName,POBJECT_ATTRIBUTES HiveFileName)|FailureIfNotNullRet
+ntdll.dll|NtLoadKey2(POBJECT_ATTRIBUTES DestinationKeyName,POBJECT_ATTRIBUTES HiveFileName,ULONG Flags)|FailureIfNotNullRet
+ntdll.dll|NtLockProductActivationKeys(ULONG* pPrivateVer,ULONG* pSafeMode)|Out|FailureIfNotNullRet
+ntdll.dll|NtLockRegistryKey(HANDLE KeyHandle)|FailureIfNotNullRet
+ntdll.dll|NtNotifyChangeKey(HANDLE KeyHandle,HANDLE EventHandle,PIO_APC_ROUTINE ApcRoutine,PVOID ApcRoutineContext,PIO_STATUS_BLOCK IoStatusBlock,ULONG NotifyFilter,BOOLEAN WatchSubtree,PVOID RegChangesDataBuffer,ULONG RegChangesDataBufferLength,BOOLEAN Asynchronous)|Out|FailureIfNotNullRet
+ntdll.dll|NtNotifyChangeMultipleKeys(HANDLE MasterKeyHandle,ULONG Count,POBJECT_ATTRIBUTES SlaveObjectsArray,HANDLE Event,PIO_APC_ROUTINE ApcRoutine,PVOID ApcContext,PIO_STATUS_BLOCK IoStatusBlock,ULONG CompletionFilter,BOOLEAN WatchTree,PVOID Buffer,ULONG BufferSize,BOOLEAN Asynchronous)|FailureIfNotNullRet
+ntdll.dll|NtOpenKey(PHANDLE pHandle,ACCESS_MASK DesiredAccess,POBJECT_ATTRIBUTES ObjectAttributes)|Out|FailureIfNotNullRet
+ntdll.dll|NtOpenKeyedEvent(PHANDLE pKeyedEventHandle,ACCESS_MASK DesiredAccess,POBJECT_ATTRIBUTES ObjectAttributes)|Out|FailureIfNotNullRet
+ntdll.dll|NtQueryKey(HANDLE KeyHandle,KEY_INFORMATION_CLASS KeyInformationClass,PVOID KeyInformation,ULONG Length,PULONG ResultLength)|Out|FailureIfNotNullRet
+ntdll.dll|NtQueryMultipleValueKey(HANDLE KeyHandle,PKEY_MULTIPLE_VALUE_INFORMATION ValuesList,ULONG NumberOfValues,PVOID DataBuffer,ULONG BufferLength,PULONG RequiredLength)|Out|FailureIfNotNullRet
+ntdll.dll|NtQueryOpenSubKeys(POBJECT_ATTRIBUTES,PULONG)|FailureIfNotNullRet
+ntdll.dll|NtQueryValueKey(HANDLE KeyHandle,PUNICODE_STRING ValueName,KEY_VALUE_INFORMATION_CLASS KeyValueInformationClass,PVOID KeyValueInformation,ULONG Length,PULONG ResultLength)|Out|FailureIfNotNullRet
+ntdll.dll|NtReleaseKeyedEvent(HANDLE KeyedEventHandle,HANDLE KeyHandle,BOOLEAN Alertable,PLARGE_INTEGER Timeout)|FailureIfNotNullRet
+ntdll.dll|NtRenameKey(HANDLE KeyHandle,PUNICODE_STRING NewName)|FailureIfNotNullRet
+ntdll.dll|NtReplaceKey(POBJECT_ATTRIBUTES NewHiveFileName,HANDLE KeyHandle,POBJECT_ATTRIBUTES BackupHiveFileName)|FailureIfNotNullRet
+ntdll.dll|NtRestoreKey(HANDLE KeyHandle,HANDLE FileHandle,ULONG RestoreOption)|FailureIfNotNullRet
+ntdll.dll|NtSaveKey(HANDLE KeyHandle,HANDLE FileHandle)|FailureIfNotNullRet
+ntdll.dll|NtSaveKeyEx(HANDLE KeyHandle,HANDLE FileHandle,ULONG Format)|FailureIfNotNullRet
+ntdll.dll|NtSaveMergedKeys(HANDLE HighPrecedenceKeyHandle,HANDLE LowPrecedenceKeyHandle,HANDLE FileHandle)|FailureIfNotNullRet
+ntdll.dll|NtSetInformationKey(HANDLE KeyHandle,KEY_SET_INFORMATION_CLASS InformationClass,PVOID KeyInformationData,ULONG DataLength)|FailureIfNotNullRet
+ntdll.dll|NtSetValueKey(HANDLE Hkey,PUNICODE_STRING ValueName,ULONG TitleIndex,ULONG Type,PVOID Data,ULONG DataSize)|FailureIfNotNullRet
+ntdll.dll|NtUnloadKey(POBJECT_ATTRIBUTES TargetKey)|FailureIfNotNullRet
+ntdll.dll|NtUnloadKeyEx(POBJECT_ATTRIBUTES TargetKey,HANDLE Event)|FailureIfNotNullRet
+ntdll.dll|NtWaitForKeyedEvent(HANDLE KeyedEventHandle,HANDLE KeyHandle,BOOLEAN Alertable,PLARGE_INTEGER Timeout)|FailureIfNotNullRet
+ntdll.dll|RtlCheckRegistryKey(ULONG RelativeTo,PWSTR Path)|FailureIfNotNullRet
+ntdll.dll|RtlFormatCurrentUserKeyPath(PUNICODE_STRING RegistryPath)|Out
+
+; RtlpNtCreateKey calls ZwCreateKey
+ntdll.dll|RtlpNtCreateKey(PHANDLE pKeyHandle,ACCESS_MASK DesiredAccess,POBJECT_ATTRIBUTES ObjectAttributes,ULONG TitleIndex,PUNICODE_STRING Class,ULONG CreateOptions,PULONG Disposition)|Out|FailureIfNotNullRet
+; RtlpNtEnumerateSubKey calls ZwEnumerateKey
+ntdll.dll|RtlpNtEnumerateSubKey(HANDLE KeyHandle,PUNICODE_STRING pUnicodeString,ULONG Index,UNKNOWN Reserved)
+; RtlpNtMakeTemporaryKey calls ZwDeleteKey
+ntdll.dll|RtlpNtMakeTemporaryKey(HANDLE hkey)
+; RtlpNtOpenKey calls ZwOpenKey
+ntdll.dll|RtlpNtOpenKey(PHANDLE pHandle,ACCESS_MASK DesiredAccess,POBJECT_ATTRIBUTES ObjectAttributes,UNKNOWN Reserved)|Out|FailureIfNotNullRet
+; RtlpNtQueryValueKey calls ZwQueryValueKey
+ntdll.dll|RtlpNtQueryValueKey(HANDLE KeyHandle,PULONG pType,PVOID Data,ULONG MaxDataSize,UNKNOWN Reserved)
+; RtlpNtSetValueKey calls ZwSetValueKey
+ntdll.dll|RtlpNtSetValueKey(HANDLE Hkey,ULONG Type,PVOID Data,ULONG DataSize)
+
+;ZwXXX point on the same RVA than NtXXX
