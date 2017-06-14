@@ -1,5 +1,5 @@
 
-; This is user language file for Exeinfo Pe 0.0.3.3 by A.S.L
+; This is user language file for Exeinfo Pe 0.0.4.1 by QQ384232750
 
 
 ; TEST VERSION LANGUAGE FILE !!!! possible crash Exeinfo or not
@@ -36,18 +36,23 @@ Overlay=附加数据:
 Diag_=判断:
 Lame_info=初步信息 - 帮助提示 - 脱壳信息
 
+
 ; Hex 2 Dec calculator
 kalk=输入十六进制(Hex)值 - "x"键 - 关闭转换器
 kalk_decHex=输入十进制(Dec)值转换到十六进制(Hex)
 
 ; Main form Buttons
 
-But_File=文件(&F):
-Plugi=插件(&G)
-O_prog=关于(&A)
-opcje_but=选项(&O)
-wyjscie=退出(&X)
-RipButton=提取(&P)
+But_File=文件:
+Plugi=插件
+O_prog=关于
+opcje_but=选项
+wyjscie=退出
+RipButton=提取
+DirView=信息
+RipButton=提取
+exToolsMenu=工具
+Xscan=扫描
 
 ; Ripper All Menu items
 
@@ -123,7 +128,7 @@ CopyAs=复制文件为 ... .bak
 Executecreateprocess=运行(创建exe进程)EXE
 ExecuteRun=运行(Windows关联)DLL, ZIP
 Deletefile1=删除文件(Alt+Del) 全局热键
-FileProp=Windows文件属性(&W)
+FileProp=Windows文件属性
 Killexe=终止exe在Windows的进程(通过TerminateProcess)
 multiskaner=F2热键 - 多文件扫描 - 扫描文件夹
 Other_detect=鼠标右键 - 其它检测器/脱壳器 子菜单
@@ -132,10 +137,9 @@ Viewlogfile1=全局日志文件 子菜单:
 Viewgloballogfile=查看全局日志文件
 Deletelogfile=删除全局日志文件
 ;
-snapshot=创建并保存屏幕截图到JPG/PNG文件(&S)
-calculator1=运行计算器(&C)
-hex2dec=转换十六进制Hex值到十进制Dec 及 Dec到Hex(&H)
-Detect_installedNETver=检测已安装的.NET Framework版本(&N)
+snapshot=创建并保存屏幕截图到JPG/PNG文件
+hex2dec=转换十六进制Hex值到十进制Dec 及 Dec到Hex
+Detect_installedNETver=检测已安装的.NET Framework版本
 
 ; Disassemble Menu
 
@@ -165,17 +169,17 @@ Label3lang=语言选择:
 ; INFO : I copy "okey" value to About Form "OK" Button
 okej=确定
 ; *** if exeinfo found exeinfope.lng file - show info on config window
-Ext_lang_file=本地化语言文件已载入
+Ext_lang_file=永乐汉化后期资源网
 
 ; --------------------------------------------------------------
 
 _Multiscan
 
-multifile_scan=开始扫描(&S)
+multifile_scan=开始扫描
 wait_czekaj=- >  请等待 ...  < -
-bn_close=关闭(&C)
+bn_close=关闭
 Scan_dir=扫描文件夹...
-change_charset=语言(&C)
+change_charset=语言
 
 ; MULTISCAN MENU Right Mouse Button
 
@@ -209,10 +213,11 @@ SekcjaSize=区段大小:
 copyTClip=复制
 SecsStat=统计
 CloseTXT2=关闭
+cave_finder=搜索
 
 
 ;Sections Menu
-viewH=查看( &Hex/Ascii )
+viewH=查看(Hex/Ascii )
 viewASM=查看( ASM 代码 )
 shortjmpcount=短/近JMP总计 ( EB 01 - EB 05 )
 countNOPinstr=NOPs指令总计 ( 90 90. . . )
