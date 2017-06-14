@@ -1,6 +1,6 @@
 Description	Extensions	Header	Offset	Footer	Default size	Flags
 *** Pictures
-JPEG	JPG;jpeg;jpe;thm;mpo	\xFF\xD8\xFF[\xC0\xC4\xDB\xDD\xE0-\xE3\xE8\xEA-\xEE\xFE]	0	~1	2097152/33554432	e
+JPEG	JPG;jpeg;jpe;thm;mpo	\xFF\xD8\xFF[\xC0\xC4\xDB\xDD\xE0-\xE3\xE5\xE8\xEA-\xEE\xFE]	0	~1	2097152/33554432	e
 PNG	png	\x89PNG\x0D\x0A\x1A\x0A	0	~6		e
 GIF	gif	GIF8[79]a	0	~3	2097152/33554432
 Thumbcache fragment	cmmm	CMMM..\x00\x00.[^\x00]	0	~84	2097152/511705088	GUb
@@ -96,7 +96,7 @@ Outlook	pst;ost;fdb;pab	!BDN	0	~24	4194304/536870912
 Outlook AutoComplete	nk2	\x0D\xF0\xAD\xBA[\x0A-\x0C]\x00\x00\x00	0		2200000
 Exchange DB	EDB;MSMessageStore	\xEF\xCD\xAB\x89[\x20\x23]\x06\x00\x00[\x00\x01]\x00\x00\x00	4	~54	5000000/1342177280
 Outlook Express	dbx	\xCF\xAD\x12\xFE[\x30\xC5-\xC7].{6}\x11	0	~25
-vCard	vcf	BEGIN:VCARD\x0D?\x0A	0	END:VCARD\x0D\x0A[^B]	256000/35651584	b
+vCard	vcf	BEGIN:VCARD\x0D?\x0A	0	END:VCARD\x0D?\x0A?	256000/35651584	b
 Virtual Calendar	vcs;ics	BEGIN:[vV]C[aA][lL][eE][nN][dD][aA][rR]	0	END:VCALENDAR	256000/10485760
 Mailbox	mbox;mbs	From\x20[^\x3F]	0	~43	2097152/536870912	EB
 OS X Tiger E-mail	emlx	#{3,9}\x20{0,6}\x0D?\x0A(Delivered-To|Status|Return-[Pp]ath|From|Subject|In-Reply-To|Message-Id|Mime-Version|Received):\x20	0	~103	524288/102760448	FG
