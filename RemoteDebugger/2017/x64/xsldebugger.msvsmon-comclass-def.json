@@ -1,0 +1,9 @@
+{
+  "managedCOMClasses": [
+    {
+      "clsid": "{657A4B5B-732B-4C6F-95E4-3378D527141D}",
+      "assemblyName": "Microsoft.XslDebugger",
+      "className": "Microsoft.XslDebugger.XsltEE"
+    }
+  ]
+}
